@@ -1,0 +1,15 @@
+---
+layout: default
+site_section: projects
+---
+<div class="article">
+	<article>
+		{% capture this_year %}{{ page.date | date: "%Y" }}{% endcapture %}
+		{% capture this_month %}{{ page.date | date: "%m" }}{% endcapture %}
+		{% capture this_day %}{{ page.date | date: "%d" }}{% endcapture %}
+
+<!-- <time class="post-date" datetime="{{ post.date | date: "%Y-%m-%d" }}"> Posted on <span class="year">{{ this_year }}</span>-<span class="month">{{ this_month }}</span>-<span class="day">{{ this_day }}</span></time> -->
+	<h1>{{ page.title }}</h1>
+	{{ content }}
+	</article>
+</div>
