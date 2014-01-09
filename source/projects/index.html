@@ -1,0 +1,22 @@
+---
+layout: default
+title: Projects
+description: "Here you will find some of my previous projects. I'll try adding more as soon as I get the time."
+keywords: "projects, web"
+site_section: projects
+---
+<h1>Projects</h1>
+
+<ul class="thumbnails">
+{% for post in site.categories.projects %}
+  <li class="span4">
+    <div class="thumbnail">
+	<a href="{{ post.url }}">
+        <img src="{{ BASE_PATH }}{{ post.image }}" alt="{{post.title}}" />
+        <span class="title">{{ post.title }}</span><br/>
+        <small>{{ post.keywords }}</small>
+    </a>
+    </div>
+  </li>
+{% endfor %}
+</ul>
