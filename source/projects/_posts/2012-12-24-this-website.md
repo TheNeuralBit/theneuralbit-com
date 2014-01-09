@@ -1,7 +1,7 @@
 ---
 layout: project
 title: This website
-description: "This Jekyll-powered site is adapted from my old, pure HTML site""
+description: "This Jekyll-powered site is adapted from my old, pure HTML site"
 keywords: "jekyll, github, blog, markdown"
 tags: [jekyll, html5, javascript, css]
 ---
