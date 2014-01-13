@@ -2,8 +2,8 @@
 #      Main Configs       #
 # ----------------------- #
 
-url: http://theneuralbit.com
-title: The Neural Bit
+url: http://theneuralbit.com/new_site
+title: the neural bit
 subtitle: Musings of a geek
 author: Brian Hulette
 simple_search: http://google.com/search
@@ -16,7 +16,7 @@ description:
 date_format: "ordinal"
 
 # RSS / Email (optional) subscription links (change if using something like Feedburner)
-subscribe_rss: /atom.xml
+subscribe_rss: /new_site/atom.xml
 subscribe_email:
 # RSS feeds can list your email address if you like
 email:
@@ -26,10 +26,10 @@ email:
 # ----------------------- #
 
 # If publishing to a subdirectory as in http://site.com/project set 'root: /project'
-root: /
+root: /new_site
 permalink: /:categories/:title/
 source: source
-destination: public
+destination: public/new_site
 plugins: plugins
 code_dir: downloads/code
 category_dir: blog/categories
