@@ -9,14 +9,10 @@ site_section: projects
 
 <ul class="thumbnails">
 {% for post in site.categories.projects %}
-  <li class="span4">
-    <div class="thumbnail">
-	<a href="{{ post.url }}">
-        <img src="{{ BASE_PATH }}{{ post.image }}" alt="{{post.title}}" />
-        <span class="title">{{ post.title }}</span><br/>
-        <small>{{ post.keywords }}</small>
-    </a>
-    </div>
-  </li>
+  <a href="{{ post.url }}">
+    <li style="background-image:url({{ root_url }}/projects/img/{{ post.image }})" class="thumbnail">
+          <div class="title">{{ post.title }}</span>
+    </li>
+  </a>
 {% endfor %}
 </ul>

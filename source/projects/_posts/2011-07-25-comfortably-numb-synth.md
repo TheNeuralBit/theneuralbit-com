@@ -1,7 +1,7 @@
 ---
 layout: project
 title: Comfortably Numb Solo Synthesis
-image: img/ks_block.png
+image: ks_block.png
 description: "A synthesized Comfortably Numb solo, using my own implementation of the Karplus-Strong Algorithm"
 keywords: "music synthesis, matlab, reaper"
 tags: [music, synthesis, daw, matlab, algorithms]
@@ -46,7 +46,7 @@ My modifications included:
   (bends)
 
 My final K-S implementation (after all modifications) looked like this:
-![Full Karplus-Strong Block Diagram](../img/ks_block.png)
+![Full Karplus-Strong Block Diagram]({{ root_url }}/projects/img/ks_block.png)
 
 Low-Pass Filter
 ---------------
@@ -104,7 +104,7 @@ frequency. Adjusting it during note generation creates a "bend".
 
 The Result
 ----------
-You can listen to the final song [here](/projects/media/CN.mp3). 
+You can listen to the final song [here]({{ root_url }}/projects/media/CN.mp3). 
 
 Note that the entire guitar part was synthesized using my MATLAB code (with some post-processing in Reaper).  
 I didn't synthesize the other instruments, they were added with Reaper.

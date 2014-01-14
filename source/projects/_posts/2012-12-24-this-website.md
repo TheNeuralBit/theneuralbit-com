@@ -1,6 +1,7 @@
 ---
 layout: project
 title: This website
+image: WB_peak.jpg
 description: "This Jekyll-powered site is adapted from my old, pure HTML site"
 keywords: "jekyll, github, blog, markdown"
 tags: [jekyll, html5, javascript, css]

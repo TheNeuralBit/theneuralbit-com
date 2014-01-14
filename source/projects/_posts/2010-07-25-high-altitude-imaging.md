@@ -1,7 +1,7 @@
 ---
 layout: project
 title: High-Altitude Imaging
-image: img/WB_peak.jpg
+image: WB_peak.jpg
 description: "Taking pictures from near-space with a weather balloon, a styrofoam cooler, a camera, and a cell phone"
 keywords: "near-space, photography, weather balloon"
 tags: [near-space, photography, weather balloon]

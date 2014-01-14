@@ -1,7 +1,7 @@
 ---
 layout: project
 title: Timelapse Photography
-image: img/WB_peak.jpg
+image: WB_peak.jpg
 description: "Timelapse photography using a cheap digital camera - my first attempt at being artsy"
 keywords: "timelapse, photography, nature, sky, night, cereus"
 tags: [timelapse, photography, nature, sky, night, cereus]

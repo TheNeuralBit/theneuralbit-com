@@ -1,7 +1,7 @@
 ---
 layout: project
 title: LED Audio Visualizer
-image: img/led_visualizer.jpg
+image: led_visualizer.jpg
 description: "An audio visualizer using a small LED array - powered by
 a Freescale microprocessor"
 keywords: "leds, electronics, microcontroller, microprocessor, Freescale"
@@ -13,12 +13,12 @@ partner and I decided to create an Audio Visualizer for our final project. The
 idea was to display the audio spectrum in real-time (calculated with an FFT) on
 an LED Matrix.
 
-![Completed LED Visualizer](../img/led_visualizer.jpg)
+![Completed LED Visualizer]({{ root_url }}/projects/img/led_visualizer.jpg)
 
 Ill give a brief summary of the project here, but much more detail, and the full
 code, can be found in our final report:
 
-* [ECE331 Final Project Report](../docs/Final Report.pdf)
+* [ECE331 Final Project Report]({{root_url }}/projects/docs/Final Report.pdf)
 
 We decided to use this [8x8 LED Matrix](http://www.sparkfun.com/commerce/product_info.php?products_id=682)
 from Sparkfun electronics. We also acquired some free samples of Maxim's

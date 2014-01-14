@@ -1,7 +1,7 @@
 ---
 layout: project
 title: Predator-Prey Simulation
-image: img/WB_peak.jpg
+image: pred-prey4.png
 description: "A simple predator-prey simulation using cellular automata"
 keywords: "C, simulation, cellular automata"
 tags: [C, simulation, cellular automata]
