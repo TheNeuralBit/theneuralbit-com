@@ -10,7 +10,7 @@ site_section: projects
 <ul class="thumbnails">
 {% for post in site.categories.projects %}
   <a href="{{ post.url }}">
-    <li style="background-image:url({{ root_url }}/projects/img/{{ post.image }})" class="thumbnail">
+    <li style="background-image:url(/new_site/projects/img/{{ post.image }});" class="thumbnail">
           <div class="title">{{ post.title }}</span>
     </li>
   </a>
