@@ -104,7 +104,8 @@ frequency. Adjusting it during note generation creates a "bend".
 
 The Result
 ----------
-You can listen to the final song [here]({{ root_url }}/projects/media/CN.mp3). 
+I used my custom algorithm to synthesize the entire guitar part of the solo.  I
+used Reaper to do a little bit of post processing on the track and added a few
+other instruments.  You can listen to the final result below:
 
-Note that the entire guitar part was synthesized using my MATLAB code (with some post-processing in Reaper).  
-I didn't synthesize the other instruments, they were added with Reaper.
+{% soundcloud https://soundcloud.com/brian-hulette/comfortably-numb-synthesis %}
