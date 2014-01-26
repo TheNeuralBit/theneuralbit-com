@@ -20,3 +20,11 @@ HTML and CSS templates.
 
 I quickly went to work converting all of my old HTML pages to markdown and
 writing templates for the website style.
+
+Credits
+-------
+{% githubrepo sotsy/githubrepo-octopress %}
+
+{% githubrepo soupdiver/octopress-soundcloud %}
+
+{% githubrepo optikfluffel/octopress-responsive-video-embed %}
