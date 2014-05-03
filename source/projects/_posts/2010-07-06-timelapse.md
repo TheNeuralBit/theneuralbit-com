@@ -22,7 +22,9 @@ install it with your distribution's package manager (``apt-get``, ``yum``,
 ``pacman``...).  Once it's installed simply run this command inside the folder
 containing your images:
 
-    # mencoder "mf://*.jpg" -mf fps=<framerate>; -o timelapse.avi -ovc lavc -lavcopts vcodec=mpeg4
+``` sh Using mencoder linenos:false
+$ mencoder "mf://*.jpg" -mf fps=<framerate>; -o timelapse.avi -ovc lavc -lavcopts vcodec=mpeg4
+```
 
 Where ``<framerate>`` is your desired framerate.  30 frames per second is
 typical, but I've found that I can get away with framerates as low as 15 frames

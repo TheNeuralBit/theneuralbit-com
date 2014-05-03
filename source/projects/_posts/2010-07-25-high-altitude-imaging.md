@@ -130,6 +130,4 @@ The last image from the entire flight.  It shows the payload's final resting pla
 
 Timelapse
 ---------
-<center>
-<iframe src="http://player.vimeo.com/video/27751339?title=0&amp;byline=0&amp;portrait=0" width="600" height="450" frameborder="0"></iframe>
-</center>
+{% vimeo 27751339 width="600" height="450" %}

@@ -7,19 +7,26 @@ keywords: "jekyll, github, blog, markdown"
 tags: [jekyll, html5, javascript, css]
 ---
 
-This site was adapted from my old, pure HTML website.  My old site was beginning
-to get too large to be maintainable.  The biggest problem I had was the lack of
-separation between content and style.  Whenever I wanted to make a change to the
-site's appearance, I had to open up every single page and edit the relavant HTML
-while leaving the content alone.
+This site was adapted from my [old, static HTML website]({{ root_url }}/old_site).
+The old site was beginning to show its age, and it was becoming too difficult to 
+maintain.  I didn't create it with any sort of templating to begin with, so if
+I ever wanted to change the appearance, my changes had to be manually propogated
+to every page.
 
-I started to look into alternatives and I found [jekyll](http://jekyllrb.com/).
-Jekyll is a blogging framework that allows you to write the content of the
-site in markdown, completely separated from the style, which is written with
-HTML and CSS templates.
+If only there was some way for me to write the content for each page independent
+of it's appearance... Of course I was aware of blogging frameworks like 
+wordpress, but these aren't really customizable enough for my tastes -  I wanted to
+be in complete control.  Fortunately, I stumbled upon 
+[jekyll](http://jekyllrb.com/), a very hackable framework that allows you to 
+write content for your pages in markdown, and create the style using CSS and
+HTML templates.
 
-I quickly went to work converting all of my old HTML pages to markdown and
-writing templates for the website style.
+Eventually I also found [octopress](http://TODO), another framework built on top 
+of jekyll which adds some nice features like a nifty default template and a ruby
+plugin architecture.  After adding some plugins (links in the credits below TODO:link),
+converting my project pages to markdown, and doing a little customization I was 
+off and runing.
+
 
 Credits
 -------
