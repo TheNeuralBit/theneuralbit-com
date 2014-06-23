@@ -30,6 +30,8 @@ the predators begin to starve, so the prey have time to reproduce and so on.
 So one day in DE2 I began to drift off and came up with the idea of making a
 predator prey simulation using cellular automata, and this is the result.
 
+<!--more-->
+
 Design
 ------
 In my simulation, the world is a square grid (I've used a 50 x 50, but it can be
@@ -57,18 +59,20 @@ This idea of a food reserve seems a little funky, why not just directly feed the
 
 Examples
 --------
-![Predator Prey 1](../img/pred-prey1.png)
-This is one of my first simulations.  It actually started with 3 species, 1
-predator and 2 prey, but it ended up with just pred and prey 2 fighting it out.
-I think this was the first time I got any sort of oscillations, so I was very excited.
+{% img left ../img/pred-prey1.png 400 %}
+{% img left ../img/pred-prey2.png 400 %}
+{% img left ../img/pred-prey4.png 400 %}
+The first example is one of my first simulations.  It actually started with 3
+species, 1 predator and 2 prey, but it ended up with just pred and prey 2
+fighting it out. I think this was the first time I got any sort of oscillations,
+so I was very excited.
 
-![Predator Prey 2](../img/pred-prey2.png)
-I'm not entirely sure what is going on in this one, but it looks really interesting.
+I'm not entirely sure what is going on in the second one, but it looks kind of
+interesting.
 
-![Predator Prey 4](../img/pred-prey4.png)
-In this one, species 10 has a carnivore fitness of 1 and herbivore fitness of 0,
-species 9 has .9 and .1, 8 has .8 and .2, etc.  I ran a bunch of simulations
-with these settings, and usually one species would just end up "winning", but
-this time I ended up with 4 oscillating species - really cool.
+In the third one, species 10 has a carnivore fitness of 1 and herbivore fitness
+of 0, species 9 has .9 and .1, 8 has .8 and .2, etc.  I ran a bunch of
+simulations with these settings, and usually one species would just end up
+"winning", but this time I ended up with 4 oscillating species - really cool.
 
 [source tarball](../code/pred-prey.tar.gz)

@@ -1,18 +1,20 @@
 ---
 layout: project
 title: Timelapse Photography
-image: WB_peak.jpg
+image: timelapse.png
 description: "Timelapse photography using a cheap digital camera - my first attempt at being artsy"
 keywords: "timelapse, photography, nature, sky, night, cereus"
 tags: [timelapse, photography, nature, sky, night, cereus]
 ---
 I recently acquired a Canon PowerShot A530 camera, and decided to use it to take
-a few timelapse videos. I installed the
+a few timelapse videos. I installed the 
 [Canon Hardware Development Kit (CHDK)](http://chdk.wikia.com/wiki/CHDK) on it,
-which gives me a lot more control over the camera's settings. In addition you
-can use it to write scripts to automatically control the camera.  I use 
-[this script](http://chdk.wikia.com/wiki/UBASIC/Scripts:_Ultra_Intervalometer) to
-capture the pictures.
+which gives me a lot more control over the camera's settings. You
+can use it to write scripts to automatically control the camera.  I used
+[this simple script](http://chdk.wikia.com/wiki/UBASIC/Scripts:_Ultra_Intervalometer) to
+capture the pictures for these timelapses.
+
+<!--more-->
 
 Once I have a series of pictures, I need to encode them into an actual video. I
 use an application called mencoder. It is a command-line tool that lets you
@@ -22,7 +24,7 @@ install it with your distribution's package manager (``apt-get``, ``yum``,
 ``pacman``...).  Once it's installed simply run this command inside the folder
 containing your images:
 
-``` sh Using mencoder linenos:false
+``` sh Using mencoder
 $ mencoder "mf://*.jpg" -mf fps=<framerate>; -o timelapse.avi -ovc lavc -lavcopts vcodec=mpeg4
 ```
 
@@ -37,9 +39,6 @@ in that folder.
 Below you can find some of the videos I've made using this technique (Click the
 "vimeo" link in the bottom right corner of each video to see it in higher
 resolution)
-
-* I want a table of contents here!
-{:toc}
 
 Roadtrip
 --------
@@ -104,3 +103,18 @@ High-Altitude Imaging
 I made a timelapse video of my  weather balloon flight.  Read more about it <A HREF="balloon.html">here</A>
 
 {% vimeo 27751339 width="600" height="450" %}
+
+LEGO Falling Water
+------------------
+For Christmas 2014 I got my Dad a LEGO Model of
+[Falling Water](http://www.fallingwater.org/), Frank Lloyd Wright's most famous
+house.  My Dad has always been a fan of architecture, particularly Wright's
+work, and it only seemed appropriate to get him some LEGOs after he bought my
+brother and I so many while we were growing up.
+
+My brother and I helped him make the model and I filmed it all with my new
+GoPro. Even though I didn't capture the images with the Canon camera used in the
+previous videos, I still used the same mencoder approach to stitch them
+together.
+
+{% vimeo 82690530 width="600" height="450" %}

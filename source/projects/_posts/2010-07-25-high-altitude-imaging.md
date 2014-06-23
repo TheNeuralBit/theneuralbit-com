@@ -7,14 +7,15 @@ keywords: "near-space, photography, weather balloon"
 tags: [near-space, photography, weather balloon]
 ---
 In the spring of 2010 my brother and I decided we would like to launch a camera
-into near-space, in order to take images of the earth from 90,000+ feet.  
-We were primarily inspired by a well known project completed by some MIT
-students called [Project Icarus](http://space.1337arts.com).
-They became somewhat famous in the fall of 2009 by launching their vehicle into
-the stratosphere for less than $150.  
-We have also utilized resources from the
+into near-space, in order to take images of the earth from 90,000+ feet.  We
+were primarily inspired by a well known project completed by some MIT students
+called [Project Icarus](http://space.1337arts.com). They became somewhat famous
+in the fall of 2009 by launching their vehicle into the stratosphere for less
+than $150. We have also utilized resources from the
 [UK High-Altitude Society](http://ukhas.org.uk) for various information regarding
 this project.
+
+<!--more-->
 
 Planning
 ========

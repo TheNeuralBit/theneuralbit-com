@@ -12,10 +12,12 @@ Electronic Music Synthesis.  In it, we discussed a lot of concepts used to
 synthesize music, including additive and destructive synthesis, FM synthesis,
 the Karplus-Strong algorithm, and various post-processing and mixing techniques.  
 
-In the final weeks of the course we were asked to create a song using some of
+As a final project for the course we were asked to create a song using some of
 the techniques we learned about.  For my project, I chose to synthesize the
 [solo](http://www.youtube.com/watch?v=Bpzxf_flm8M#t=04m25s) from the Pink Floyd
 song "Comfortably Numb" using the Karplus-Strong Algorithm.  
+
+<!--more-->
 
 To synthesize the guitar part of the song I wrote a modified version of the
 Karplus-Strong Algorithm - an algorithm for synthesizing the sound created by a
@@ -108,3 +110,4 @@ I used my custom algorithm to synthesize the entire guitar part of the solo.  I
 used Reaper to do a little bit of post processing on the track and added a few
 other instruments.  You can listen to the final result below:
 
+{% soundcloud https://soundcloud.com/brian-hulette/comfortably-numb-synthesis %}

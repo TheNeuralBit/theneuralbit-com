@@ -7,13 +7,15 @@ a Freescale microprocessor"
 keywords: "leds, electronics, microcontroller, microprocessor, Freescale"
 tags: [leds, electronics, microcontroller, microprocessor, Freescale]
 ---
+![Completed LED Visualizer]({{ root_url }}/projects/img/led_visualizer.jpg)
+
 In my Embedded Systems Design class, we were required to create a final project
 of our choosing which demonstrated our understanding of the course concepts. My
 partner and I decided to create an Audio Visualizer for our final project. The
 idea was to display the audio spectrum in real-time (calculated with an FFT) on
 an LED Matrix.
 
-![Completed LED Visualizer]({{ root_url }}/projects/img/led_visualizer.jpg)
+<!--more-->
 
 Ill give a brief summary of the project here, but much more detail, and the full
 code, can be found in our final report:
