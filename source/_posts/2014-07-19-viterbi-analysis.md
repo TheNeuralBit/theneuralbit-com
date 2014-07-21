@@ -1,9 +1,9 @@
 ---
 layout: post
 title: Analyzing the Viterbi Algorithm
-description: "This Jekyll-powered site is adapted from my old, pure HTML site"
+description: "My CS5114 Dynamic Programming project - an analysis of the Viterbi algorithm"
 keywords: "CS5114, VT, MATLAB, DSP"
-tabs: [CS5114, VT, MATLAB, DSP]
+tags: [CS5114, VT, MATLAB, DSP]
 ---
 
 This summer I am taking CS5114 - Theory of Algorithms at Virginia Tech.
