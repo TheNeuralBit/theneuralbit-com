@@ -1,0 +1,2 @@
+[paths]
+default = git+ssh://git@github.com:TheNeuralBit/pelican_plugin-render_math.git

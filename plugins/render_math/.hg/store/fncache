@@ -1,0 +1,11 @@
+data/mathjax_markdown_extension.py.i
+data/mathjax.py.i
+data/Readme.md.i
+data/.gitignore.i
+data/mathjax_script.txt.i
+data/math.py.i
+data/README.md.i
+data/latex.py.i
+data/mathjax_script_template.i
+data/pelican_mathjax_markdown_extension.py.i
+data/__init__.py.i

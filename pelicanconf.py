@@ -33,3 +33,7 @@ DEFAULT_PAGINATION = False
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True
 THEME = "pelican-octopress-theme"
+
+PLUGIN_PATHS = ["plugins"]
+PLUGINS = ["render_math"]
+MATH_JAX = {"color": "#000000"}
