@@ -1,6 +1,7 @@
 - [X] images/links
 - [ ] plugins
     - [X] LaTeX
+    - [X] vimeo
     - [ ] githubrepo
     - [ ] speakerdeck
     - [ ] soundcloud
