@@ -4,4 +4,4 @@ layout: post
 tags: LaTeX, Linux, inotify, bash
 
 
-{% gist 5b29004bd08cb23565d9 inotifyexec.sh %}
+[gist:id=5b29004bd08cb23565d9,file=inotifyexec.sh]
