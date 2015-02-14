@@ -1,13 +1,10 @@
----
-layout: project
 title: Timelapse Photography
-image: timelapse.png
-description: "Timelapse photography using a cheap digital camera - my first attempt at being artsy"
-keywords: "timelapse, photography, nature, sky, night, cereus"
-tags: [timelapse, photography, nature, sky, night, cereus]
----
+slug: timelapse
+layout: project
+tags: timelapse, photography, nature, sky, night, cereus
+
 I recently acquired a Canon PowerShot A530 camera, and decided to use it to take
-a few timelapse videos. I installed the 
+a few timelapse videos. I installed the
 [Canon Hardware Development Kit (CHDK)](http://chdk.wikia.com/wiki/CHDK) on it,
 which gives me a lot more control over the camera's settings. You
 can use it to write scripts to automatically control the camera.  I used

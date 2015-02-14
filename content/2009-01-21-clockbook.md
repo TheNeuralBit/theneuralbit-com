@@ -1,11 +1,8 @@
----
-layout: project
 title: Clock in a Book
-image: bookshelf.jpg
-description: "A digital clock hacked into a book"
-keywords: "hollow book, clock"
-tags: [hollow book, clock]
----
+slug: clockbook
+layout: project
+tags: hollow book, clock
+
 
 Over the summer I needed an amplifier for my TV visualizer. I bought a kit for
 one online, but the site I bought it from had a minimum purchase price, so I

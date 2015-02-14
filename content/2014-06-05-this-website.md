@@ -1,11 +1,8 @@
----
-layout: project
 title: This website
-image: this_website.png
-description: "This Jekyll-powered site is adapted from my old, pure HTML site"
-keywords: "jekyll, github, blog, markdown"
-tags: [jekyll, html5, javascript, css]
----
+slug: this-website
+layout: project
+tags: jekyll, html5, javascript, css
+
 
 This site was adapted from my [old, static HTML website]({{ root_url }}/old_site).
 I wrote the original site way back in high school (with many updates throughout
@@ -16,12 +13,12 @@ Enter [jekyll](http://jekyllrb.com/) and [octopress](http://octopress.org).
 
 <!--more-->
 
-I knew for a long time that I needed some kind of templating engine for my 
+I knew for a long time that I needed some kind of templating engine for my
 webpage so I could separate the appearance from the content. Unfortunately, I
 was only aware of things like Wordpress, which really didn't give me the control I
 wanted - I wanted to be able to open up the tool, try things out, and generally
 just hack around. Fortunately, I eventually stumbled upon
-[jekyll](http://jekyllrb.com/), a very hackable framework that allows you to 
+[jekyll](http://jekyllrb.com/), a very hackable framework that allows you to
 write content for your pages in markdown, and create the style using CSS and
 HTML templates.
 

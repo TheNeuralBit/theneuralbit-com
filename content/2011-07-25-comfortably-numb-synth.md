@@ -1,21 +1,18 @@
----
-layout: project
 title: Comfortably Numb Solo Synthesis
-image: ks_block.png
-description: "A synthesized Comfortably Numb solo, using my own implementation of the Karplus-Strong Algorithm"
-keywords: "music synthesis, matlab, reaper"
-tags: [music, synthesis, daw, matlab, algorithms]
----
+slug: comfortably-numb-synth
+layout: project
+tags: music, synthesis, daw, matlab, algorithms
+
 
 During my last quarter at Rose-Hulman I took a great class called ECE481 -
 Electronic Music Synthesis.  In it, we discussed a lot of concepts used to
 synthesize music, including additive and destructive synthesis, FM synthesis,
-the Karplus-Strong algorithm, and various post-processing and mixing techniques.  
+the Karplus-Strong algorithm, and various post-processing and mixing techniques.
 
 As a final project for the course we were asked to create a song using some of
 the techniques we learned about.  For my project, I chose to synthesize the
 [solo](http://www.youtube.com/watch?v=Bpzxf_flm8M#t=04m25s) from the Pink Floyd
-song "Comfortably Numb" using the Karplus-Strong Algorithm.  
+song "Comfortably Numb" using the Karplus-Strong Algorithm.
 
 <!--more-->
 
@@ -35,10 +32,10 @@ Modifications to Karplus-Strong
 To get a basic understanding of the Karplus-Strong algorithm, you can read about
 it [here](http://en.wikipedia.org/wiki/Karplus-Strong_string_synthesis).
 
-I made some modifications to the basic Karplus-Strong algorithm for my project.  
+I made some modifications to the basic Karplus-Strong algorithm for my project.
 Most of them were inspired by
 [this page](http://www.music.mcgill.ca/~gary/courses/projects/618_2009/NickDonaldson/)
-by Nicholas P. Donaldson.  
+by Nicholas P. Donaldson.
 
 My modifications included:
 - A *variable* second-order low-pass loop filter

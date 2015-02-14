@@ -1,11 +1,8 @@
----
-layout: project
 title: High-Altitude Imaging
-image: WB_peak.jpg
-description: "Taking pictures from near-space with a weather balloon, a styrofoam cooler, a camera, and a cell phone"
-keywords: "near-space, photography, weather balloon"
-tags: [near-space, photography, weather balloon]
----
+slug: high-altitude-imaging
+layout: project
+tags: near-space, photography, weather balloon
+
 In the spring of 2010 my brother and I decided we would like to launch a camera
 into near-space, in order to take images of the earth from 90,000+ feet.  We
 were primarily inspired by a well known project completed by some MIT students
@@ -33,13 +30,13 @@ Then we addressed each one seperately.
 Imaging
 =======
 We decided to use a Canon camera, because we would be able to install the
-[Canon Hardware Development Kit (CHDK)](http://chdk.wikia.com/wiki/CHDK) on it.  
+[Canon Hardware Development Kit (CHDK)](http://chdk.wikia.com/wiki/CHDK) on it.
 CHDK allows you to control many settings of the camera that you dont normally
-have access to, and it will allow you to write scripts to automate the camera.  
+have access to, and it will allow you to write scripts to automate the camera.
 
 I found a [script](http://chdk.wikia.com/wiki/UBASIC/Scripts:_Ultra_Intervalometer)
 for creating time-lapse videos that will work perfectly for our purposes. The
-script will automatically take pictures with a specific delay between each.  
+script will automatically take pictures with a specific delay between each.
 
 Tracking
 ========
@@ -47,7 +44,7 @@ To solve the problem of tracking the balloon we need a device that will remotely
 report its location to us, so that we can recover it once it lands.  It would be
 nice if this device worked during the entire duration of the flight so we could
 follow it, but all we really need is to track the location of the balloon once
-it lands.  
+it lands.
 
 A cellphone with a data plan and GPS is ideal for this application. It can track
 the location of the balloon with its GPS and report back to us using its data
@@ -67,13 +64,13 @@ Launch Vehicle
 ==============
 Just like Project Icarus, we decided to package everything inside of a styrofoam
 cooler.  Its another cheap solution, but it will work well enough for our first
-attempt.  
+attempt.
 
 The cooler will be filled with foam from a foam mattress pad, with compartments
 cut out for the various electronics.  Hopefully this will provide enough cushion
 to protect them from the shock of landing. We also plan to add chemical
 hand-warmers next to each device in order to counteract the effects of the cold
-at high altitude.  
+at high altitude.
 
 Project Outcome
 ===============
@@ -100,7 +97,7 @@ A successful launch!
 UPDATE (8/21/2011): Payload Found!!
 ===================================
 On August 12, 2011 - nearly a year after our launch - my brother got a call from
-someone who had found our payload. When he picked it up, it had traveled over a 
+someone who had found our payload. When he picked it up, it had traveled over a
 mile from its original landing site. The cooler looked completely destroyed, but
 the camera's SD card was still intact. Below I've posted a few of the images
 from the flight as well as a timelapse video of the entire flight.

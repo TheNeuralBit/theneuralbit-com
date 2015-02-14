@@ -1,11 +1,8 @@
----
-layout: project
 title: Predator-Prey Simulation
-image: pred-prey4.png
-description: "A simple predator-prey simulation using cellular automata"
-keywords: "C, simulation, cellular automata"
-tags: [C, simulation, cellular automata]
----
+slug: predator-prey-sim
+layout: project
+tags: C, simulation, cellular automata
+
 This project was inspired by two classes that I took.  The first was
 Introduction to Complex Systems, which I took my senior year in high school. It
 was a sort of review of a lot of interesting high level math concepts, we spent
@@ -44,12 +41,12 @@ determines how good it is at eating plants.  Both fitnesses are represented by
 a number between 0 and 1.
 
 In each iteration three things happen:
-1. Eating - Each organism (non-empty cell) tries to eat the organisms around it. 
+1. Eating - Each organism (non-empty cell) tries to eat the organisms around it.
 Success is based on the carivore fitness of both parties.  If the organism fails
 it tries to eat a plant in the vicinity.  If the organism succeeds at either
 action the food is added to the species' food reserves.
 
-2. Starvation - Each organism tries to eat something from the species' food reserves.  
+2. Starvation - Each organism tries to eat something from the species' food reserves.
 If it fails, or the species is out of food, it dies.</LI>
 
 3. Reproduction - Each empty cell is replaced by a member of the species that

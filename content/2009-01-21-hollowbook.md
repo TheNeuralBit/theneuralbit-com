@@ -1,11 +1,8 @@
----
-layout: project
 title: Hollow Book
-image: hb_open.jpg
-description: "A hollowed out book"
-keywords: "hollow book"
-tags: [hollow book]
----
+slug: hollowbook
+layout: project
+tags: hollow book
+
 
 ![hb_closed.jpg][1]
 
@@ -29,4 +26,3 @@ toolbox.
    [2]: http://www.wikihow.com/Make-a-Hollow-Book
    [3]: {{ root_url }}/projects/img/hb_empty.jpg
    [4]: {{ root_url }}/projects/img/hb_open.jpg
-

@@ -1,12 +1,8 @@
----
-layout: project
 title: LED Audio Visualizer
-image: led_visualizer.jpg
-description: "An audio visualizer using a small LED array - powered by
-a Freescale microprocessor"
-keywords: "leds, electronics, microcontroller, microprocessor, Freescale"
-tags: [leds, electronics, microcontroller, microprocessor, Freescale]
----
+slug: led-audio-visualizer
+layout: project
+tags: leds, electronics, microcontroller, microprocessor, Freescale
+
 ![Completed LED Visualizer]({{ root_url }}/projects/img/led_visualizer.jpg)
 
 In my Embedded Systems Design class, we were required to create a final project

@@ -1,10 +1,8 @@
----
-layout: post
 title: Analyzing the Viterbi Algorithm
-description: "My CS5114 Dynamic Programming project - an analysis of the Viterbi algorithm"
-keywords: "CS5114, VT, MATLAB, DSP"
-tags: [CS5114, VT, MATLAB, DSP]
----
+slug: viterbi-analysis
+layout: post
+tags: CS5114, VT, MATLAB, DSP
+
 
 This summer I am taking CS5114 - Theory of Algorithms at Virginia Tech.
 Our first Project was to analyze a Dynamic Programming algorithm, and compare

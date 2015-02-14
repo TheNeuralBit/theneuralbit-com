@@ -1,8 +1,7 @@
----
-layout: simple
 title: About Me
-description: "About Brian H. Hulette"
----
+slug: None
+layout: simple
+
 I am a nerd and I have always been a nerd.  I grew up messing with computers,
 mostly just playing video games though, nothing productive of course.  I dabbled
 with Linux here and there but I never really did much practical work on the computer.
