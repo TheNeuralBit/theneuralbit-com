@@ -1,6 +1,7 @@
 title: About Me
-slug: None
+slug: About Me
 layout: simple
+date: 2015-02-13
 
 I am a nerd and I have always been a nerd.  I grew up messing with computers,
 mostly just playing video games though, nothing productive of course.  I dabbled

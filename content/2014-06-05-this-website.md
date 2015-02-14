@@ -4,7 +4,7 @@ layout: project
 tags: jekyll, html5, javascript, css
 
 
-This site was adapted from my [old, static HTML website]({{ root_url }}/old_site).
+This site was adapted from my [old, static HTML website]({filename}/old_site).
 I wrote the original site way back in high school (with many updates throughout
 college), and it was beginning to show its age.  The biggest issue was that I
 didn't create it with any sort of templating to begin with, so when I wanted to
@@ -29,7 +29,7 @@ architecture.  Once I saw that Octopress calls itself "A blogging framework for
 hackers," I knew I'd found what I needed. I converted my original project pages
 to markdown with the help of [heck yes markdown](http://heckyesmarkdown), added
 some [plugins](#plugins), created a custom page just to list my
-[projects]({{ root_url }}/projects), and I was good to go.
+[projects]({filename}/projects), and I was good to go.
 
 This is by no means the final iteration of this site, I fully intend to continue
 to fiddle with my templates and try out new things. After all, why bother using

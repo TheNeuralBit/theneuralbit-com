@@ -83,14 +83,14 @@ to simply wait.  If were lucky a storm will eventually knock the payload out of
 the tree.
 
 Below are some images from launch day:
-![Weather balloon payload](../img/balloon_payload.jpg)
+![Weather balloon payload]({filename}/images/balloon_payload.jpg)
 
 The cooler just before we sealed it off for the launch.
-![Weather balloon ready for launch](../img/balloon_rdy.jpg)
+![Weather balloon ready for launch]({filename}/images/balloon_rdy.jpg)
 
 The entire project ready to go.  At this point the balloon was full, the phone
 was tracking, and the camera was recording.
-![Weather balloon away!](../img/balloon_away.jpg)
+![Weather balloon away!]({filename}/images/balloon_away.jpg)
 
 A successful launch!
 
@@ -104,27 +104,27 @@ from the flight as well as a timelapse video of the entire flight.
 
 Here's the first image from the flight - you can see our payload and some of the
 staging area.
-![First weather balloon image](../img/WB_first.jpg)
+![First weather balloon image]({filename}/images/WB_first.jpg)
 
 One of the pictures taken during the process of inflating the balloon.
-![Weather balloon inflation](../img/WB_inflate.jpg)
+![Weather balloon inflation]({filename}/images/WB_inflate.jpg)
 
 An image at a relatively low altitude - just high enough to see my brother's house.
-![Weather balloon house view](../img/WB_house.jpg)
+![Weather balloon house view]({filename}/images/WB_house.jpg)
 
 A few more images from the ascent...
-![Weather balloon higher](../img/WB_high.jpg)
+![Weather balloon higher]({filename}/images/WB_high.jpg)
 
-![Weather balloon above the clouds](../img/WB_clouds.jpg)
+![Weather balloon above the clouds]({filename}/images/WB_clouds.jpg)
 
-![Weather balloon atmosphere](../img/WB_atmosphere.jpg)
+![Weather balloon atmosphere]({filename}/images/WB_atmosphere.jpg)
 
 The last image before the balloon popped and the payload plummeted back to
 earth.
-![Weather balloon highest point](../img/WB_peak.jpg)
+![Weather balloon highest point]({filename}/images/WB_peak.jpg)
 
 The last image from the entire flight.  It shows the payload's final resting place - in a tree.
-![Weather balloon final picture](../img/WB_final.jpg)
+![Weather balloon final picture]({filename}/images/WB_final.jpg)
 
 Timelapse
 ---------

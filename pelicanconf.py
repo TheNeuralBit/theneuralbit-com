@@ -5,6 +5,7 @@ from __future__ import unicode_literals
 AUTHOR = u'Brian Hulette'
 SITENAME = u'the neural bit'
 SITEURL = ''
+STATIC_PATHS = ['images', 'media', 'code']
 
 PATH = 'content'
 
@@ -31,3 +32,4 @@ DEFAULT_PAGINATION = False
 
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True
+THEME = "pelican-octopress-theme"

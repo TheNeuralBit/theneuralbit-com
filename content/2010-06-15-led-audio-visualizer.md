@@ -3,7 +3,7 @@ slug: led-audio-visualizer
 layout: project
 tags: leds, electronics, microcontroller, microprocessor, Freescale
 
-![Completed LED Visualizer]({{ root_url }}/projects/img/led_visualizer.jpg)
+![Completed LED Visualizer]({filename}/images/led_visualizer.jpg)
 
 In my Embedded Systems Design class, we were required to create a final project
 of our choosing which demonstrated our understanding of the course concepts. My
@@ -16,7 +16,7 @@ an LED Matrix.
 Ill give a brief summary of the project here, but much more detail, and the full
 code, can be found in our final report:
 
-* [ECE331 Final Project Report]({{root_url }}/projects/docs/Final Report.pdf)
+* [ECE331 Final Project Report]({filename}/media/Final Report.pdf)
 
 We decided to use this [8x8 LED Matrix](http://www.sparkfun.com/commerce/product_info.php?products_id=682)
 from Sparkfun electronics. We also acquired some free samples of Maxim's
@@ -28,7 +28,7 @@ The FFT was calculated with Freescale's MC9HCS12C128 microprocessor.  We realize
 that this was sort of an unusual choice, since its not specialized for Digital
 Signal Processing (DSP), but it its the processor we used throughout the quarter
 in this course, and we had become quite familiar with it. We used a fixed-point
-FFT library which we found <A HREF="http://www.jjj.de/fft/fftpage.html">here</A>
+FFT library which we found [here](http://www.jjj.de/fft/fftpage.html")
 (we used fix_fft, the first entry).
 
 This library was originally written by Tom Roberts, with contributions from
@@ -41,7 +41,7 @@ so we had to create a simple op-amp level shifter and amplifier to ensure the
 signal stays in that range.  A schematic of all of our hardware, which includes
 the op-amp circuit, can be found below.
 
-![LED Visualizer Schematic](../img/led_schematic.jpg)
+![LED Visualizer Schematic]({filename}/images/led_schematic.jpg)
 
 I took a few videos of the project, to give you an idea of how it works.
 The first is when we first got the project working on a breadboard:
