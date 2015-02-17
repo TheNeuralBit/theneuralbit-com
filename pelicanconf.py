@@ -35,5 +35,5 @@ DEFAULT_PAGINATION = False
 THEME = "pelican-octopress-theme"
 
 PLUGIN_PATHS = ["plugins"]
-PLUGINS = ["render_math", "pelican_gist", "liquid_tags.vimeo"]
+PLUGINS = ["render_math", "pelican_gist", "liquid_tags.vimeo", "liquid_tags.sc"]
 MATH_JAX = {"color": "#000000"}
