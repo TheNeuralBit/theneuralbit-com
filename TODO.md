@@ -4,4 +4,5 @@
     - [X] vimeo
     - [ ] githubrepo
     - [ ] speakerdeck
-    - [ ] soundcloud
+    - [X] soundcloud
+        - [ ] config file specify soundcloud client id
