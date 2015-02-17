@@ -32,8 +32,6 @@ SYNTAX = "{% sc [url] %}"
 
 SOUNDCLOUD = re.compile(r'(https?\:\/\/.*)')
 
-CLIENT_ID = 'ebb0751100a870643e78012bc3394fe5'
-
 @LiquidTags.register('sc')
 def sc(preprocessor, tag, markup):
     match = SOUNDCLOUD.search(markup)
@@ -42,8 +40,12 @@ def sc(preprocessor, tag, markup):
         groups = match.groups()
         url = groups[0]
 
+    # TODO: check if this was actually defined
+    client_id = preprocessor.configs.getConfig('SOUNDCLOUD_CLIENT_ID')
+
     if url:
-        client = soundcloud.Client(client_id=CLIENT_ID)
+        client = soundcloud.Client(client_id=client_id)
+        # TODO: make sure this request works
         embed_info = client.get('/oembed', url=url, maxheight=166)
     else:
         raise ValueError("Error processing input, "
