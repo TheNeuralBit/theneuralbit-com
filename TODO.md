@@ -5,4 +5,4 @@
     - [ ] githubrepo
     - [ ] speakerdeck
     - [X] soundcloud
-        - [ ] config file specify soundcloud client id
+        - [X] config file specify soundcloud client id
