@@ -3,6 +3,6 @@
     - [X] LaTeX
     - [X] vimeo
     - [ ] githubrepo
-    - [ ] speakerdeck
+    - [X] speakerdeck
     - [X] soundcloud
         - [X] config file specify soundcloud client id
