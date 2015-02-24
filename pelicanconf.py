@@ -4,6 +4,7 @@ from __future__ import unicode_literals
 
 AUTHOR = u'Brian Hulette'
 SITENAME = u'the neural bit'
+SITESUBTITLE = u'a nerd doing nerdy things and writing about them'
 SITEURL = ''
 STATIC_PATHS = ['images', 'media', 'code']
 
@@ -33,6 +34,7 @@ DEFAULT_PAGINATION = False
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True
 THEME = "pelican-octopress-theme"
+HEADER_IMAGE = "/images/neuron_header.png"
 
 PLUGIN_PATHS = ["plugins"]
 PLUGINS = ["render_math", "pelican_gist", "liquid_tags.vimeo", "liquid_tags.sc", "liquid_tags.speakerdeck"]
