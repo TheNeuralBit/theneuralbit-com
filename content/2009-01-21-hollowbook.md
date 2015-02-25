@@ -2,6 +2,7 @@ title: Hollow Book
 slug: hollowbook
 layout: project
 tags: hollow book
+category: projects
 
 
 ![hb_closed.jpg]({filename}/images/hb_closed.jpg)

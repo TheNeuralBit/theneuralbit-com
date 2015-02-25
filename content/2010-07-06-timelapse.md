@@ -2,6 +2,7 @@ title: Timelapse Photography
 slug: timelapse
 layout: project
 tags: timelapse, photography, nature, sky, night, cereus
+category: projects
 
 I recently acquired a Canon PowerShot A530 camera, and decided to use it to take
 a few timelapse videos. I installed the

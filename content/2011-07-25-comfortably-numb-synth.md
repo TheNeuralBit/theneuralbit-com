@@ -2,6 +2,7 @@ title: Comfortably Numb Solo Synthesis
 slug: comfortably-numb-synth
 layout: project
 tags: music, synthesis, daw, matlab, algorithms
+category: projects
 
 
 During my last quarter at Rose-Hulman I took a great class called ECE481 -

@@ -2,6 +2,7 @@ title: Clock in a Book
 slug: clockbook
 layout: project
 tags: hollow book, clock
+category: projects
 
 
 Over the summer I needed an amplifier for my TV visualizer. I bought a kit for

@@ -1,5 +1,5 @@
 title: About Me
-slug: About Me
+slug: aboutme
 layout: simple
 date: 2015-02-13
 

@@ -2,6 +2,7 @@ title: LED Audio Visualizer
 slug: led-audio-visualizer
 layout: project
 tags: leds, electronics, microcontroller, microprocessor, Freescale
+category: projects
 
 ![Completed LED Visualizer]({filename}/images/led_visualizer.jpg)
 

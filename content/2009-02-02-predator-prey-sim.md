@@ -2,6 +2,7 @@ title: Predator-Prey Simulation
 slug: predator-prey-sim
 layout: project
 tags: C, simulation, cellular automata
+category: projects
 
 This project was inspired by two classes that I took.  The first was
 Introduction to Complex Systems, which I took my senior year in high school. It

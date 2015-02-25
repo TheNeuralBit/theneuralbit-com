@@ -1,4 +1,4 @@
-title: My $\Latex$ Development Environment
+title: My LaTeX Development Environment
 slug: latex-environment
 layout: post
 tags: LaTeX, Linux, inotify, bash

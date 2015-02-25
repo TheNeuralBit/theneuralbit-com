@@ -2,6 +2,7 @@ title: This website
 slug: this-website
 layout: project
 tags: jekyll, html5, javascript, css
+category: projects
 
 
 This site was adapted from my [old, static HTML website]({filename}/old_site).

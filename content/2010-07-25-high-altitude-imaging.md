@@ -2,6 +2,7 @@ title: High-Altitude Imaging
 slug: high-altitude-imaging
 layout: project
 tags: near-space, photography, weather balloon
+category: projects
 
 In the spring of 2010 my brother and I decided we would like to launch a camera
 into near-space, in order to take images of the earth from 90,000+ feet.  We
