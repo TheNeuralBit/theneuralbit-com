@@ -1,4 +1,4 @@
-title: About Me
+title: about me
 slug: aboutme
 layout: simple
 date: 2015-02-13
