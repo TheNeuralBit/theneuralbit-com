@@ -39,6 +39,6 @@ MATH_JAX = {"color": "#000000"}
 SOUNDCLOUD_CLIENT_ID = 'ebb0751100a870643e78012bc3394fe5'
 
 # THEME CONFIGURATION
-THEME = "pelican-octopress-theme"
+THEME = ".themes/pelican-octopress-theme"
 HEADER_IMAGE = "/images/neuron_header.png"
 MENUITEMS = (('about me', '/aboutme.html'),)
