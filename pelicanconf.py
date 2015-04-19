@@ -38,6 +38,9 @@ GITHUB_REPO_COUNT = 5
 GITHUB_SKIP_FORK = True
 TWITTER_USER = 'BrianHulette'
 
+GRAVATAR_HASH = 'da1a82d2354ee7b8bcce6affa9227307'
+GRAVATAR_WIDTH = 260
+
 # Blogroll
 #LINKS = (('Pelican', 'http://getpelican.com/'),
 #         ('Python.org', 'http://python.org/'),

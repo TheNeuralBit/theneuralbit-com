@@ -4,6 +4,12 @@
 	  <img src="{{ SITEURL }}/{{ SIDEBAR_IMAGE }}" alt="{{ SIDEBAR_IMAGE_ALT}}" width="{{SIDEBAR_IMAGE_WIDTH}}"/> 
   </section>
   {% endif %}
+
+  {% if GRAVATAR_HASH %}
+  <section>
+      <a href="http://www.gravatar.com/{{ GRAVATAR_HASH }}"><img src="http://www.gravatar.com/avatar/{{ GRAVATAR_HASH }}?s={{GRAVATAR_WIDTH}}" alt="Gravatar" width="{{GRAVATAR_WIDTH}}"/></a>
+  </section>
+  {% endif %}
   <section>
     <h1>Recent Posts</h1>
     <ul id="recent_posts">
