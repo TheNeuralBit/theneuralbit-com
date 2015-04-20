@@ -6,7 +6,7 @@ AUTHOR = u'Brian Hulette'
 SITENAME = u'the neural bit'
 SITESUBTITLE = u'a nerd doing nerdy things and writing about them'
 SITEURL = ''
-STATIC_PATHS = ['images', 'media', 'code']
+STATIC_PATHS = ['images', 'media', 'code', 'jquery.githubRepoWidget.min.js']
 
 PATH = 'content'
 
@@ -24,14 +24,14 @@ DEFAULT_PAGINATION = False
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True
 PLUGIN_PATHS = ["plugins"]
-PLUGINS = ["render_math", "pelican_gist", "liquid_tags.vimeo", "liquid_tags.sc", "liquid_tags.speakerdeck"]
+PLUGINS = ["render_math", "pelican_gist", "liquid_tags.vimeo", "liquid_tags.sc", "liquid_tags.speakerdeck", "liquid_tags.githubrepo"]
 MATH_JAX = {"color": "#000000"}
 SOUNDCLOUD_CLIENT_ID = 'ebb0751100a870643e78012bc3394fe5'
 
 # THEME CONFIGURATION
 THEME = ".themes/pelican-octopress-theme"
 HEADER_IMAGE = "/images/neuron_header.png"
-#MENUITEMS = (('about me', '/aboutme.html'),)
+MENUITEMS = (('blog', '/'),)
 
 GITHUB_USER = 'TheNeuralBit'
 GITHUB_REPO_COUNT = 5
@@ -40,6 +40,10 @@ TWITTER_USER = 'BrianHulette'
 
 GRAVATAR_HASH = 'da1a82d2354ee7b8bcce6affa9227307'
 GRAVATAR_WIDTH = 260
+
+EXTRA_HEADER = \
+"""<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script type="text/javascript" src="jquery.githubRepoWidget.min.js"></script>"""
 
 # Blogroll
 #LINKS = (('Pelican', 'http://getpelican.com/'),
