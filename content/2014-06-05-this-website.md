@@ -5,7 +5,7 @@ tags: jekyll, html5, javascript, css
 category: projects
 
 
-This site was adapted from my [old, static HTML website]({filename}/old_site).
+This site was adapted from my old, static HTML website.
 I wrote the original site way back in high school (with many updates throughout
 college), and it was beginning to show its age.  The biggest issue was that I
 didn't create it with any sort of templating to begin with, so when I wanted to

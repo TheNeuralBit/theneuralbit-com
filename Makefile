@@ -12,10 +12,10 @@ FTP_HOST=localhost
 FTP_USER=anonymous
 FTP_TARGET_DIR=/
 
-SSH_HOST=localhost
+SSH_HOST=ssh.phx.nearlyfreespeech.net
 SSH_PORT=22
-SSH_USER=root
-SSH_TARGET_DIR=/var/www
+SSH_USER=hulettbh_theneuralbit
+SSH_TARGET_DIR=.
 
 S3_BUCKET=my_s3_bucket
 
