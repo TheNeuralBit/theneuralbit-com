@@ -1,0 +1,3 @@
+[submodule "extras/julia-monoalphabetic-cipher"]
+	path = extras/julia-monoalphabetic-cipher
+	url = git@github.com:TheNeuralBit/julia-monoalphabetic-cipher.git
