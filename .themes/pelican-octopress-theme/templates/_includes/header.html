@@ -1,6 +1,15 @@
 <hgroup>
-  <h1><a href="{{ SITEURL }}/">{{ SITENAME }}</a></h1>
+  <h1 id="dummy-logo" style=><a href="{{ SITEURL }}/">{{ SITENAME }}</a></h1>
   {% if SITESUBTITLE %}
     <h2>{{ SITESUBTITLE }}</h2>
   {% endif %}
 </hgroup>
+<svg id="logo" style="position: absolute; top: -26px;">
+</svg>
+<script type"text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.10/d3.min.js"></script>
+<script type="text/javascript">
+window.onload = function() {
+{% include '_includes/anagranimate.js' %}
+document.getElementById('dummy-logo').style.visibility = 'hidden';
+};
+</script>
