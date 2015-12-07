@@ -6,12 +6,16 @@ var svg = d3.select('#logo')
             .attr('height', '100%')
             .style('font-size', '2.2em')
             .style('font-family', '"PT Serif"');
+var tester = svg.append('text');
+var space_width = tester.text('a a').node().getBBox().width -
+                  tester.text('aa').node().getBBox().width
+tester.remove();
+
 var str1 = strParse('the neural bit');
 var str2 = strParse('brian hulette');
 var mouse_node = {};
 
 var curr_str = str1;
-
 
 // Turn strings into lists of objects with some additional information
 function strParse(str) {
@@ -20,7 +24,7 @@ function strParse(str) {
         .rangePoints([20, w-20], 1);
   var rtrn = []
   var char_count = {};
-  var tester = svg.append('text')
+  tester = svg.append('text')
   var curr_x = 0;
   var bbox, this_object, is_space;
   for (var i = 0; i < str.length; i++) {
@@ -31,6 +35,7 @@ function strParse(str) {
     }
     is_space = str[i] == " "
     bbox = tester.text(is_space ? "l" : str[i]).node().getBBox();
+    if (is_space) bbox.width = space_width;
 
     curr_x += bbox.width/2;
     // These are the objects were adding to the list
@@ -210,7 +215,6 @@ function toggle(str) {
 }
 
 function do_toggle() {
-  console.log('toggling!');
   if (active) {
     toggle(str2); 
   } else {
@@ -219,14 +223,12 @@ function do_toggle() {
 }
 
 function startmouse() { 
-  console.log('activating charge!');
   active = !active;
   force.charge(function(d, i) { return i == 0 ? -1000 : 1; });
   force.start();
 }
 
 function endmouse() { 
-  console.log('mouseleave');
   force.charge(0);
   force.start();
 }
