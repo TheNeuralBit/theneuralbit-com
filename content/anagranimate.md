@@ -3,7 +3,7 @@ slug: anagranimation
 layout: post
 category: projects
 tags: javascript, d3, animation, force layout
-date: 2016-01-14
+date: 2016-01-18
 
 The name of this website is an anagram. It's possible to rearrange all of the
 letters in **the neural bit** to form **brian hulette**.
@@ -128,11 +128,12 @@ D3 Force Layout
 Yet again, I followed Mike Bostock's lead here. I knew I wanted to use a force
 layout to create something like his 
 [Multi-Foci Force Layout](http://bl.ocks.org/mbostock/1021953). My idea was
-that each character would have a foci associated with it, which is set based on
-the letter's position in the string.  I then used the same approach as
-Bostock's Multi-Foci Layout to attrach each character to it's foci. When
-toggling strings we simply change these foci positions and the letters shuffle
-around.  To make things more interesting I also added a few more features:
+that each character would have a focus associated with it, which is set based
+on the letter's position in the string.  I then used the same approach as
+Bostock's Multi-Foci Layout to attract each character to its focus. When
+toggling strings we simply change these focus positions and the letters will
+shuffle around.  To make things more interesting I also added a few more
+features:
 
 * Mousing over the logo triggers the transition
 * Collision forces between the letters
