@@ -146,4 +146,4 @@ You can see this Force Layout implementation, in all its gory detail, in the
 jsfiddle below or on [github](https://github.com/TheNeuralBit/anagranimate). If
 you'd rather just see it in action, scroll up and mouse over my logo!
 
-<iframe width="100%" height="600" src="//jsfiddle.net/theneuralbit/hazkxg07/embedded/result,js/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+<iframe width="100%" height="600" src="//jsfiddle.net/hazkxg07/10/embedded/result,js" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
