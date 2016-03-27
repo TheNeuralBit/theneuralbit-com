@@ -1,0 +1,69 @@
+==================================================================
+https://keybase.io/hulettbh
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://theneuralbit.com
+  * I am hulettbh (https://keybase.io/hulettbh) on keybase.
+  * I have a public key with fingerprint 2BBC 7636 3D31 D1CC 5131  45C0 2F48 7FAD BB75 17BE
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "eldest_kid": "01017ce87d1d5963bd4b19869991ea099c8bc0832839b009ec199714a2f3b43b6a3c0a",
+            "fingerprint": "2bbc76363d31d1cc513145c02f487fadbb7517be",
+            "host": "keybase.io",
+            "key_id": "2f487fadbb7517be",
+            "kid": "01017ce87d1d5963bd4b19869991ea099c8bc0832839b009ec199714a2f3b43b6a3c0a",
+            "uid": "4ddcf7cd275bafc2586a6edaf8be4a19",
+            "username": "hulettbh"
+        },
+        "service": {
+            "hostname": "theneuralbit.com",
+            "protocol": "http:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1455764450,
+    "expire_in": 157680000,
+    "prev": "69ef60ff7f83621af785961970517240248e078c9fb34929360c3fe4e6be5f88",
+    "seqno": 10,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.0.51
+Comment: https://keybase.io/crypto
+
+yMIrAnicrZJbSBRRGMfXytLF0gJ9sTAGoQdlnTP3s+GDCpHiS0bSRVvmnDnjDroz
+6+6sl8ToofQh8UZgJbpSQiqSUYEWFq50gSIqCpIoBE26+mBUXsjqjNhbj52Xw/n4
+/3/n+/5897ZudLnjGmbNwxOR1MK4x7HuiKv0Pj/TwCBLq2e8DUwlWbtIlUbCtq/S
+0BgvwwIWyJgosgY0EUo80gQEoCJBCAFRWQixgjCr8JzCQ8SykGAAoQwEldN5JPBI
+UnnMqkw2oxtmBQkFQ4ZpUyyHEJYlXuI1HmgAYxHwQBAxy+mCIuuqhpAsAhkRavRb
+YcdBm0NqmHgMi9bow7fW3j/0/7nvyBpO0DSsy1jjZBGpOuZERVIloqm6goigAugI
+wyRkqgFC1f5IFbFt5GcasxlarTEwcYJ1JllX2H5ikkhIrUKG7cFWgPqDIcu2sFXl
++G076HXMdn3QUdcS5Fvn+JBhajRKaqghobBhmYwXUCW2DQdMQxRlSRBENpshdUEj
+RHyGo6BFhaXH+YbUUKQEiS6xui7rCi9xQNVlhcYEoMzSHDmB5QSFsLKCoY54AXKQ
+l1jM60QgEiKiriiMM1m1aVE2hdpqBWWGjQpTtSMhwjROTpRtcsW5XZvjNzg75nIn
+pvzdvLK+Lb8ySz43uvKbvy+3NO+9WNZTNDtRUjyz6UjTu2JgznUW9aYlNV1uH+qw
+D0afvI+L+vMG7JOrV5YSBuMHA8dSk28uJp3vGKmNFXTtTvP8fFZbsNKX1XkU7zvl
+zsD7h7tjzKG3U3UDxTlZpn+6jbu+oaR/1zzzqu7ap4pST8u2F5JQVH/7QKwu8dbS
+sD9tobV8qvD5uR1jC5npbzYnnD2Dfwx8MANLCRk7Rx9w7rY8z92oiNJLoi2Le0a+
+vX708trxwZnnYynlk97ZjamXfvfkD1WOVi/2joenR5Ov5paNz0dzPyqry7n9d5Jb
+H27vGu4Cw3Nf2tsv3KgPfI2deJqzsnK64Q/aAUbx
+=lGWy
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/hulettbh
+
+==================================================================
+
