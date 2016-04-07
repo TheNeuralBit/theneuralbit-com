@@ -1,0 +1,17 @@
+<header>
+  <h1 class="entry-title">
+    <a href="{{ SITEURL }}/{{ article.url }}">{{ article.title|striptags }}</a>
+  </h1>
+  <p class="meta">
+    <time datetime="{{ article.date.isoformat() }}" pubdate>{{ article.locale_date }}</time>
+    {% if X_MIN_READ %}
+      &ndash; &#128339; {{ article.stats['read_mins'] }} min read
+    {% endif %}
+  </p>
+</header>
+<div class="entry-content">{{ article.summary }}</div>
+{% if article.summary != article.content %}
+<footer>
+  <a rel="full-article" href="{{ SITEURL }}/{{ article.url }}">Read On &crarr;</a>
+</footer>
+{% endif %}

@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% block header %}{% endblock %}
+{% block content %}
+<header>
+    <a href="{{ SITEURL }}/">Back</a>
+</header>
+<header>
+  <h1 class="entry-title">{{ article.title|striptags }}</h1>
+  <p class="meta">
+    <time datetime="{{ article.date.isoformat() }}" pubdate>{{ article.locale_date }}</time>
+    {% if X_MIN_READ %}
+      &ndash; &#128339; {{ article.stats['read_mins'] }} min read
+    {% endif %}
+  </p>
+</header>
+
+<div class="entry-content">{{ article.content }}</div>
+{% endblock %}

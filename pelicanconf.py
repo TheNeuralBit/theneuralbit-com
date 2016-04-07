@@ -26,12 +26,15 @@ MARKUP = ('md', 'ipynb')
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True
 PLUGIN_PATHS = ["plugins"]
-PLUGINS = ["render_math", "pelican_gist", "liquid_tags.vimeo", "liquid_tags.sc", "liquid_tags.speakerdeck", "liquid_tags.githubrepo", "ipynb", "simple_footnotes"]
+PLUGINS = ["render_math", "pelican_gist", "liquid_tags.vimeo",
+           "liquid_tags.sc", "liquid_tags.speakerdeck",
+           "liquid_tags.githubrepo", "ipynb",
+           "simple_footnotes"]
 MATH_JAX = {"color": "#000000"}
 SOUNDCLOUD_CLIENT_ID = 'ebb0751100a870643e78012bc3394fe5'
 
 # THEME CONFIGURATION
-THEME = ".themes/pelican-octopress-theme"
+THEME = ".themes/theneuralbit"
 HEADER_IMAGE = "/images/neuron_header.png"
 MENUITEMS = (('blog', '/'),)
 
