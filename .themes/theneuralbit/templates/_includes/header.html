@@ -1,1 +1,24 @@
-<h1>{{ SITENAME }}</h1>
+<nav class="navbar-default" data-spy="affix" data-offset-top="50">
+  <div class="container">
+    <h1 class="navbar-header">
+      <a class="navbar-brand" href="{{ SITEURL }}/">{{ SITENAME }}</a>
+    </h1>
+    <ul class="main-navigation nav navbar-nav navbar-right">
+      {% for title, link in MENUITEMS %}
+        <li><a href="{{ link }}">{{ title }}</a></li>
+      {% endfor %}
+      {% if DISPLAY_PAGES_ON_MENU %}
+        {% for page in PAGES %}
+          <li><a href="{{ SITEURL }}/{{ page.url }}">{{ page.title }}</a></li>
+        {% endfor %}
+        {% if DISPLAY_CATEGORIES_ON_MENU %}
+        {% for cat, null in categories %}
+        <li {% if cat == category %}class="active"{% endif %}>
+        <a href="{{ SITEURL }}/{{ cat.url }}">{{ cat }}</a>
+        </li>
+        {% endfor %}
+        {% endif %}
+      {% endif %}
+    </ul>
+  </div>
+</nav>

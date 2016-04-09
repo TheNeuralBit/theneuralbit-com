@@ -4,18 +4,12 @@
   <meta charset="utf-8">
   <title>{% block title %}{{ SITENAME }}{% endblock %}</title>
   <meta name="author" content="{{ AUTHOR }}">
-  <link href="{{ SITEURL }}/theme/css/bootstrap.min.css" media="screen, projection"
-        rel="stylesheet" type="text/css">
   <link href="{{ SITEURL }}/theme/style.css" media="screen, projection"
         rel="stylesheet" type="text/css">
 </head>
 <body>
   {% block header %}
-  <header data-spy="affix" data-offset-top="0" class="title">
-    <div class="container">
-        {% include '_includes/header.html' %}
-    </div>
-  </header>
+    {% include '_includes/header.html' %}
   {% endblock %}
   <div class="container content">
   {% block content %}

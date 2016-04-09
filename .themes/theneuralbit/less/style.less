@@ -1,0 +1,83 @@
+@import url(https://fonts.googleapis.com/css?family=PT+Sans:700|PT+Serif);
+
+@import "bootstrap/bootstrap.less";
+
+@import "variables.less";
+@import "bootstrap/mixins.less";
+
+@import "bootstrap/grid.less";
+@import "bootstrap/code.less";
+@import "bootstrap/type.less";
+
+body {
+  margin: 0px;
+}
+
+h1.entry-title {
+  font-size: 36px;
+}
+
+h1.entry-title a {
+  text-decoration: none;
+  color: black;
+  transition: color 0.3s;
+}
+
+h1.entry-title a:hover {
+  color: @link-hover-color;
+}
+
+nav {
+  background-color: white;
+  width: 100%;
+}
+
+
+nav h1 {
+  margin: 0px;
+}
+
+@navbar-default-bg:         white;
+@navbar-affix-bg:           #f8f8f8;
+@navbar-affix-top-height:   100px;
+@navbar-affix-height:       @navbar-height;
+
+nav.affix-top {
+  height: @navbar-affix-top-height;
+}
+
+nav.affix-top ul.nav {
+  margin-top: @navbar-affix-top-height - @navbar-affix-height;
+}
+
+nav.affix {
+  position: fixed;
+  top: 0;
+  border-bottom: 1px solid @navbar-default-border;
+  background-color: @navbar-affix-bg;
+}
+
+.navbar-brand {
+  padding-left: 0px;
+}
+
+nav.affix-top .navbar-brand {
+  margin-top: (@navbar-affix-top-height - @font-size-h1)/2;
+  font-size: @font-size-h1;
+}
+
+
+nav.affix + div.content {
+  padding-top: @navbar-affix-top-height;
+}
+
+p.meta {
+  color: @gray-light;
+  font-size: @font-size-small;
+}
+
+ol.simple-footnotes {
+  padding-top: 20px;
+  border-top: 1px solid @gray-lighter;
+  margin-top: 20px;
+}
