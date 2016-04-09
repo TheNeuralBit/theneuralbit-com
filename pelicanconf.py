@@ -6,7 +6,8 @@ AUTHOR = u'Brian Hulette'
 SITENAME = u'the neural bit'
 SITESUBTITLE = u'a nerd doing nerdy things and writing about them'
 SITEURL = ''
-STATIC_PATHS = ['images', 'media', 'code', 'jquery.githubRepoWidget.min.js', 'keybase.txt']
+STATIC_PATHS = ['images', 'media', 'code', 'jquery.githubRepoWidget.min.js',
+                'keybase.txt']
 
 PATH = 'content'
 
