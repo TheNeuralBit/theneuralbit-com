@@ -3,3 +3,5 @@ cache
 *.pyc
 *.pid
 .*.swp
+.*.swo
+.themes/theneuralbit/static/style.css
