@@ -11,45 +11,41 @@
 @import "bootstrap/code.less";
 @import "bootstrap/type.less";
 
-body {
-  margin: 0px;
-}
-
 h1.entry-title {
   font-size: 36px;
-}
-
-h1.entry-title a {
-  text-decoration: none;
-  color: black;
-  transition: color 0.3s;
-}
-
-h1.entry-title a:hover {
-  color: @link-hover-color;
+  a {
+    text-decoration: none;
+    color: black;
+    transition: color 0.3s;
+    &:hover {
+      color: @link-hover-color;
+    }
+  }
 }
 
 nav {
   background-color: white;
   width: 100%;
+  .navbar-brand {
+    font-family: @font-family-sans-serif;
+    padding-left: 0px;
+    line-height: 1;
+  }
 }
-
-
-nav .navbar-brand {
-  font-family: @font-family-sans-serif;
-}
-
-@navbar-default-bg:         white;
-@navbar-affix-bg:           #f8f8f8;
-@navbar-affix-top-height:   100px;
-@navbar-affix-height:       @navbar-height;
 
 nav.affix-top {
   height: @navbar-affix-top-height;
-}
-
-nav.affix-top ul.nav {
-  margin-top: @navbar-affix-top-height - @navbar-affix-height;
+  ul.nav {
+    margin-top: @navbar-affix-top-height - @navbar-affix-height;
+  }
+  .navbar-brand {
+    height: @navbar-affix-top-height;
+    padding-top: (@navbar-affix-top-height - @font-size-h1)/2;
+    font-size: @font-size-h1;
+    padding-left: 50px;
+    margin-left: -50px;
+    padding-right: 50px;
+  }
 }
 
 nav.affix {
@@ -57,30 +53,13 @@ nav.affix {
   top: 0;
   border-bottom: 1px solid @navbar-default-border;
   background-color: @navbar-affix-bg;
+  .navbar-brand {
+    visibility: visible !important;
+  }
+  #logo {
+    display: none !important;
+  }
 }
-
-.navbar-brand {
-  padding-left: 0px;
-  line-height: 1;
-}
-
-nav.affix-top .navbar-brand {
-  height: @navbar-affix-top-height;
-  padding-top: (@navbar-affix-top-height - @font-size-h1)/2;
-  font-size: @font-size-h1;
-  padding-left: 50px;
-  margin-left: -50px;
-  padding-right: 50px;
-}
-
-nav.affix .navbar-brand {
-  visibility: visible !important;
-}
-
-nav.affix #logo {
-  display: none !important;
-}
-
 
 nav.affix + div.content {
   padding-top: @navbar-affix-top-height;
