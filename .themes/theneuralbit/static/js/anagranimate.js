@@ -8,17 +8,21 @@ var padding_left = parseInt(header.style('padding-left').slice(0, -2));
 var padding_top = parseInt(header.style('padding-top').slice(0, -2));
 
 var svg = d3.select('#logo')
+            .style('position', 'absolute')
             .style('width', w)
             .style('height', h)
-            .style('left', -padding_left)
-            .style('position', 'absolute')
-            .style('display', 'block');
-header.style('visibility', 'hidden');
+            .style('left', -padding_left);
 ['font-size', 'font-family'].map(function (key) { svg.style(key, header.style(key)); });
+
+svg.style('display', 'block');
+header.style('visibility', 'hidden');
+
+
 var tester = svg.append('text');
 var space_width = tester.text('a a').node().getBBox().width -
                   tester.text('aa').node().getBBox().width
 tester.remove();
+
 
 var str1 = strParse('the neural bit');
 var str2 = strParse('brian hulette');
@@ -70,7 +74,7 @@ function strParse(str) {
     rtrn.push(this_object);
   }
   tester.remove()
-  return rtrn;
+  return {'string': str, 'data': rtrn};
 }
 
 // Use this key for d3 selections, so that when we change out strings we
@@ -81,7 +85,7 @@ function key(d) {
 
 // Create the initial text objects
 var text = svg.selectAll('text')
-    .data(str1)
+    .data(str1.data)
     .enter()
     .append('text')
     .attr('text-anchor', 'middle')
@@ -111,7 +115,7 @@ var trigger_rect = svg.append('rect')
 
 // Create force layout
 var force = d3.layout.force()
-  .nodes([mouse_node].concat(str1))
+  .nodes([mouse_node].concat(str1.data))
   .links([])
   .gravity(0)
   .size([w, h])
@@ -224,16 +228,17 @@ function toggle(str) {
     });
   });
   text.data(str, key);
-  //circles.data(str, key);
   curr_str = str;
   force.start();
 }
 
 function do_toggle() {
   if (active) {
-    toggle(str2); 
+    toggle(str2.data); 
+    header.text(str2.string);
   } else {
-    toggle(str1);
+    toggle(str1.data);
+    header.text(str1.string);
   }
   active = !active;
 }
@@ -266,3 +271,15 @@ svg.on('touchmove',   movemouse);
 
 // Start up the force layout once everything is defined
 force.start();
+
+function enable_anagranimate() {
+  svg.style('display', 'block');
+  header.style('visibility', 'hidden');
+  force.start();
+}
+
+function disable_anagranimate() {
+  svg.style('display', 'none');
+  header.style('visibility', 'visible')
+  force.stop();
+}
