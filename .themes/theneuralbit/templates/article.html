@@ -1,9 +1,12 @@
 {% extends 'base.html' %}
-{% block header %}{% endblock %}
+{% block header %}
+<nav class"navbar-default" style="padding-top: 20px;">
+  <div class="container">
+    <a href="{{ SITEURL }}/">← Back</a>
+  </div>
+</nav>
+{% endblock %}
 {% block content %}
-<header>
-    <a href="{{ SITEURL }}/">Back</a>
-</header>
 <header>
   <h1 class="entry-title">{{ article.title|striptags }}</h1>
   <p class="meta">
