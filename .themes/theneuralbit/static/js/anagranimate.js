@@ -5,14 +5,18 @@ var w = header_rect.right - header_rect.left;
 var h = header_rect.bottom - header_rect.top;
 
 var padding_left = parseInt(header.style('padding-left').slice(0, -2));
+console.log('padding-left')
+console.log(padding_left)
 var padding_top = parseInt(header.style('padding-top').slice(0, -2));
 
 var svg = d3.select('#logo')
             .style('position', 'absolute')
-            .style('width', w)
-            .style('height', h)
-            .style('left', -padding_left);
+            .style('width', '' + w + 'px')
+            .style('height', '' + h + 'px')
+            .style('left', '' + -padding_left + 'px');
 ['font-size', 'font-family'].map(function (key) { svg.style(key, header.style(key)); });
+console.log(svg);
+console.log(svg.style('left'));
 
 svg.style('display', 'block');
 header.style('visibility', 'hidden');
