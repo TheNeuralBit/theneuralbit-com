@@ -240,9 +240,11 @@ function do_toggle() {
   if (active) {
     toggle(str2.data); 
     header.text(str2.string);
+    document.title = str2.string;
   } else {
     toggle(str1.data);
     header.text(str1.string);
+    document.title = str1.string;
   }
   active = !active;
 }
