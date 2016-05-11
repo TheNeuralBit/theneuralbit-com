@@ -20,7 +20,7 @@ h1.entry-title {
     color: black;
     transition: color 0.3s;
     &:hover {
-      color: @link-hover-color;
+      color: @brand-primary;
     }
   }
 }
@@ -84,4 +84,12 @@ img {
   display: block;
   padding: 5px;
   border: 1px solid @gray-light;
+}
+
+.navbar-nav{
+    a {
+        &:hover {
+            border-bottom: 2px solid @brand-primary;
+        }
+    }
 }
