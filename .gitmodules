@@ -1,3 +1,12 @@
 [submodule "extras/julia-monoalphabetic-cipher"]
 	path = extras/julia-monoalphabetic-cipher
 	url = git@github.com:TheNeuralBit/julia-monoalphabetic-cipher.git
+[submodule "plugins/render_math"]
+	path = plugins/render_math
+	url = https://github.com/barrysteyn/pelican_plugin-render_math.git
+[submodule "pelican-plugins"]
+	path = pelican-plugins
+	url = https://github.com/getpelican/pelican-plugins.git
+[submodule "plugins/ipynb"]
+	path = plugins/ipynb
+	url = https://github.com/danielfrg/pelican-ipynb.git

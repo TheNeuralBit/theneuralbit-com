@@ -1,0 +1,5 @@
+pelican==3.6.3
+pelican-gist==0.3.3
+soundcloud==0.5.0
+ipython==5.0.0
+ipython-genutils==0.1.0
