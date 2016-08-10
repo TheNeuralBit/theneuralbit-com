@@ -3,7 +3,7 @@ slug: fun-with-git-stash
 layout: post
 category: blog
 tags: cli, git, stash
-date: 2016-08-07
+date: 2016-08-10
 
 If you're anything like me, the only times you've ever used `git stash` it went
 something like this: In the middle of working on branch **A** you decided you
