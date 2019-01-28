@@ -1,46 +1,36 @@
-title: about me
-slug: aboutme
-layout: simple
-date: 2015-02-13
+title: about
+slug: about
+date: 2017-01-03
 
-I am a nerd and I have always been a nerd.  I grew up messing with computers,
-mostly just playing video games though, nothing productive of course.
-I dabbled with Linux here and there but I never really did much practical work
-on the computer.  Finally when I went to High School at the 
-[North Carolina School of Science and Math](http://www.ncssm.edu) (where I met 
-some amazing people, like [this guy](http://trevorshp.com)), I got the chance to
-take some programming classes and I was hooked.
+Hi! I'm Brian Hulette. "the neural bit" [is an anagram](../anagranimation.html)
+of my name, and I think that's cool.
 
-I wasn't completely sold on Computer Science as a career field though - I still
-really liked physics, and Engineering sounded very appealing -  so when I went
-on to the [Rose-Hulman Institure of Technology (RHIT)](http://www.rose-hulman.edu)
-for undergrad, I decided to split the difference and
-pursue a Computer Engineering major. This was definitely one of the best
-decisions I've ever made, because it exposed me to DSP, Communications, and
-Software-Defined Radio.  The whole field seemed like a perfect combination
-of Math, Physics, and Computer Science, and I couldn't get enough of it.
+Places I've been, things I've done:
 
-After graduating from RHIT in the Spring of 2011 I took a job with n~ask, a
-small defense contractor that specializes in DSP work, and I've been there ever
-since.  I have also just completed a Masters of Electrical Engineering at the
-Virginia Tech Northern Virginia Center (VT NVC), I will be graduating in the
-Spring of 2015.
+* [North Carolina School of Science and Math](http://www.ncssm.edu): 2005-2007,
+  a residential high school where I learned a ton and met some amazing people
+* [Rose-Hulman Institute of Technology](http://www.rose-hulman.edu): 2007-2011,
+  a small but great engineering school in Indiana where I earned a BS in
+  Computer Engineering
+* [Center for In Vivo Microscopy](http://www.civm.duhs.duke.edu/): Summer 2010,
+  a lab at Duke University developing novel medical imaging methods
+* [n~ask, inc.](https://www.n-ask.com): 2011-2016, a small contractor in
+  Northern Virgina that develops signal processing systems
+* [Virginia Tech National Capital Region](https://ncr.vt.edu): 2012-2015,
+  Virginia Tech's National Capital Region campus, where I completed a Master of
+  Electrical Engineering
+* [Commonwealth Computer Research, Inc.](http://www.ccri.com): 2016-2018,
+  a small contractor in Charlottesville, VA that works on a wide range of
+  large-scale data analytics.  Contributed to
+  [Stealth](http://www.ccri.com/case-studies/stealth/), [Apache
+  Arrow](https://arrow.apache.org)
+* Google: 2018-present, Trying my hand at a tech giant
 
-In my free time I do a number of different things.  At some point during
-undergrad I decided that a sedentary lifestyle was a bad idea and I should try
-to be at least a little bit active,
-so I got into running.  I've been running pretty consistently ever since and I've
-run in several races, including a few Half Marathons (not a full yet, but
-someday!).  I never really stopped playing video games either. These days I've
-gotten really into [Kerbal Space Program](http://kerbalspaceprogram.com), to the
-point that it's pretty much all I play, but every once in a while I'll play
-something else with college buddies, as a way to catch up.
+You can find a lot more information about most of these items on my [resume](../media/resume.pdf).
 
-And I also like to work on side projects just for fun. I created this site as
-a way of showcasing these [projects](../category/projects.html).
-Unfortunately, in recent years, I haven't had much time for these projects
-- it's just too hard to fit them in between work, school, and running.
-Hopefully as school wraps up I'll be able to start working off my list of
-project ideas again in earnest.
+Where I can be found elsewhere:
 
-Oh, and if you're interested, here's a [resume](../media/resume.pdf).
+* [keybase.io/hulettbh](https://keybase.io/hulettbh)
+* [github.com/TheNeuralBit](https://github.com/TheNeuralBit)
+* [linkedin.com/in/brian-hulette](https://linkedin.com/in/brian-hulette)
+* [twitter.com/BrianHulette](https://twitter.com/BrianHulette)
