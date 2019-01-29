@@ -46,7 +46,7 @@ My modifications included:
   (bends)
 
 My final K-S implementation (after all modifications) looked like this:
-![Full Karplus-Strong Block Diagram]({filename}/images/ks_block.png)
+![Full Karplus-Strong Block Diagram]({static}./images/ks_block.png)
 
 Low-Pass Filter
 ---------------

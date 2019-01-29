@@ -27,7 +27,7 @@ compute each path metric once.  This allows it to run in linear time, rather
 than exponential time like a recursive approach.
 
 You can view my presentation below, or for a more complete treatment you
-can read the [paper]({filename}/media/paper.pdf).
+can read the [paper]({static}./media/paper.pdf).
 
 {% speakerdeck 82b209c0f181013106da6eb14261a8ef %}
 <br/>

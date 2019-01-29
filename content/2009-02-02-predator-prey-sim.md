@@ -61,16 +61,16 @@ The first example is one of my first simulations.  It actually started with 3
 species, 1 predator and 2 prey, but it ended up with just pred and prey 2
 fighting it out. I think this was the first time I got any sort of oscillations,
 so I was very excited.
-![]({filename}/images/pred-prey1.png)
+![]({static}./images/pred-prey1.png)
 
 I'm not entirely sure what is going on in the second one, but it looks kind of
 interesting.
-![]({filename}/images/pred-prey2.png)
+![]({static}./images/pred-prey2.png)
 
 In the third one, species 10 has a carnivore fitness of 1 and herbivore fitness
 of 0, species 9 has .9 and .1, 8 has .8 and .2, etc.  I ran a bunch of
 simulations with these settings, and usually one species would just end up
 "winning", but this time I ended up with 4 oscillating species - really cool.
-![]({filename}/images/pred-prey4.png)
+![]({static}./images/pred-prey4.png)
 
-[source tarball]({filename}/code/pred-prey.tar.gz)
+[source tarball]({static}./code/pred-prey.tar.gz)
