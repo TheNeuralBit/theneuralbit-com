@@ -38,6 +38,9 @@ SOUNDCLOUD_CLIENT_ID = 'ebb0751100a870643e78012bc3394fe5'
 THEME = ".themes/theneuralbit"
 HEADER_IMAGE = "/images/neuron_header.png"
 MENUITEMS = (('blog', '/'),)
+DISPLAY_PAGES_ON_MENU = True
+DISPLAY_CATEGORIES_ON_MENU = False
+
 
 GITHUB_USER = 'TheNeuralBit'
 GITHUB_REPO_COUNT = 5
@@ -50,6 +53,14 @@ GRAVATAR_WIDTH = 260
 EXTRA_HEADER = \
 """<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 <script type="text/javascript" src="jquery.githubRepoWidget.min.js"></script>"""
+
+MARKDOWN = {
+    'extension_configs': {
+        'markdown.extensions.extra': {},
+        'markdown.extensions.meta': {},
+    },
+    'output_format': 'html5',
+}
 
 # Blogroll
 #LINKS = (('Pelican', 'http://getpelican.com/'),

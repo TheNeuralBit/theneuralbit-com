@@ -108,4 +108,4 @@ I used my custom algorithm to synthesize the entire guitar part of the solo.  I
 used Reaper to do a little bit of post processing on the track and added a few
 other instruments.  You can listen to the final result below:
 
-{% sc https://soundcloud.com/brian-hulette/comfortably-numb-synthesis %}
+{% soundcloud https://soundcloud.com/brian-hulette/comfortably-numb-synthesis %}
