@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "6059bbb5bd0ba155c5522e1df5ce624d7a8a77cfaaae7157f092bddd5193c08f"
+            "sha256": "a087a70849b7eb6311ab884894c7405c8a5f759d861be5e7e6b0674bd3052cb6"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -209,11 +209,11 @@
         },
         "pelican": {
             "hashes": [
-                "sha256:2a5347fe47464ee743bff99b6e81d1b5823f2e70e7be5bd6ed66a5bdd5f3578b",
-                "sha256:f1456c163a963d498abd741ea7c6f47984365ecd8bbd6e118c44e247815cb7ef"
+                "sha256:8924308a5448699515ae22fd21aba2fa542a691a5c2910bf07af53ab5801ab2b",
+                "sha256:990aa8b62a7bcb34c7585e5a67d05a10690ab2fff3cb761d0a94826cec51cd17"
             ],
             "index": "pypi",
-            "version": "==3.7.1"
+            "version": "==4.0.1"
         },
         "pelican-gist": {
             "hashes": [
