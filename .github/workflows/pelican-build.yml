@@ -24,7 +24,7 @@ jobs:
       with:
         python-version: "3.8"
     - name: Init submodules
-    - run: |
+      run: |
         git submodule update --init --recursive
     - name: Install dependencies
       run: |
