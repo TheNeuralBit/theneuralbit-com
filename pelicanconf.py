@@ -22,6 +22,7 @@ TRANSLATION_FEED_ATOM = None
 
 DEFAULT_PAGINATION = False
 
+from pelican_jupyter import markup as nb_markup
 MARKUP = ('md', 'ipynb')
 
 # Uncomment following line if you want document-relative URLs when developing
@@ -29,7 +30,7 @@ MARKUP = ('md', 'ipynb')
 PLUGIN_PATHS = ["plugins"]
 PLUGINS = ["render_math", "pelican_gist", "liquid_tags.vimeo",
            "liquid_tags.soundcloud", "liquid_tags.speakerdeck",
-           "liquid_tags.githubrepo", "ipynb.markup",
+           "liquid_tags.githubrepo", nb_markup,
            "simple_footnotes"]
 MATH_JAX = {"color": "#000000"}
 SOUNDCLOUD_CLIENT_ID = 'ebb0751100a870643e78012bc3394fe5'
