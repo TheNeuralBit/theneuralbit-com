@@ -5,13 +5,12 @@ from __future__ import unicode_literals
 AUTHOR = u'Brian Hulette'
 SITENAME = u'the neural bit'
 SITESUBTITLE = u'a nerd doing nerdy things and writing about them'
-SITEURL = ''
-STATIC_PATHS = ['images', 'media', 'code', 'jquery.githubRepoWidget.min.js',
-                'keybase.txt']
+SITEURL = 'https://theneuralbit.com'
+STATIC_PATHS = ['images', 'media', 'code', 'keybase.txt']
 
 PATH = 'content'
 
-TIMEZONE = 'Europe/Paris'
+TIMEZONE = 'America/Los_Angeles'
 
 DEFAULT_LANG = u'en'
 
