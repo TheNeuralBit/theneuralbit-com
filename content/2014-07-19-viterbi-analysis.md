@@ -37,4 +37,4 @@ includes implementations of a Brute Force algorithm, a Recursive algorithm,
 and finally the Viterbi algorithm. There are also scripts to prove that they all
 work and to test the runtime.
 
-{% githubrepo theneuralbit/viterbi %}
+<div class="github-widget" data-repo="theneuralbit/viterbi"></div>

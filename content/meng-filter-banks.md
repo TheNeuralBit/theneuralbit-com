@@ -7,5 +7,5 @@ date: 2015-05-26
 status: hidden
 
 
-{% githubrepo theneuralbit/cyclo_channelizer %}
+<div class="github-widget" data-repo="theneuralbit/cyclo_channelize"></div>
 [!embedlycard](https://github.com/TheNeuralBit/cyclo_channelizer/raw/master/latex/poster.pdf)

@@ -39,12 +39,12 @@ a templating engine if you don't ever change the templates?
 <a name="plugins"></a>
 Plugins
 -------
-{% githubrepo sotsy/githubrepo-octopress %}
+<div class="github-widget" data-repo="sotsy/githubrepo-octopress"></div>
 
 <br/>
 
-{% githubrepo soupdiver/octopress-soundcloud %}
+<div class="github-widget" data-repo="soupdiver/octopress-soundcloud"></div>
 
 <br/>
 
-{% githubrepo optikfluffel/octopress-responsive-video-embed %}
+<div class="github-widget" data-repo="optikfluffel/octopress-responsive-video-embed"></div>
