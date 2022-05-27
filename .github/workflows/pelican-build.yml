@@ -31,5 +31,4 @@ jobs:
         pip install -r requirements.txt
     - name: Test Pelican Build
       run: |
-        # TODO: Fix warnings, update tot --fatal warnings
-        python -m pelican --fatal errors
+        python -m pelican --fatal warnings
