@@ -47,12 +47,12 @@ the op-amp circuit, can be found below.
 I took a few videos of the project, to give you an idea of how it works.
 The first is when we first got the project working on a breadboard:
 
-<CENTER>
-<iframe src="http://player.vimeo.com/video/11916846?title=0&amp;byline=0&amp;portrait=0" width="400" height="300" frameborder="0">derp</iframe>
-</CENTER>
+<center>
+{% vimeo 11916846 400 300 %}
+</center>
 
 The second video shows the final product working:
 
-<CENTER>
-<iframe src="http://player.vimeo.com/video/12518028?title=0&amp;byline=0&amp;portrait=0" width="400" height="300" frameborder="0">derp</iframe>
-</CENTER>
+<center>
+{% vimeo 12518028 400 300 %}
+</center>
