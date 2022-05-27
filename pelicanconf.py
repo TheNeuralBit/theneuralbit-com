@@ -30,8 +30,7 @@ MARKUP = ('md', 'ipynb')
 PLUGIN_PATHS = ["plugins"]
 PLUGINS = ["render_math", "pelican_gist", "liquid_tags.vimeo",
            "liquid_tags.soundcloud", "liquid_tags.speakerdeck",
-           "liquid_tags.githubrepo", nb_markup,
-           "simple_footnotes"]
+           nb_markup, "simple_footnotes"]
 MATH_JAX = {"color": "#000000"}
 SOUNDCLOUD_CLIENT_ID = 'ebb0751100a870643e78012bc3394fe5'
 
