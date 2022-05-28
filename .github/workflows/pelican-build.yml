@@ -32,3 +32,11 @@ jobs:
     - name: Test Pelican Build
       run: |
         python -m pelican -s publishconf.py --fatal warnings
+    - name: Deploy to GoStatic
+      id: deploy
+      uses: DigitalSVN/GoStatic@v1.0
+      with:
+        api-token: ${{ secrets.GOSTATIC_API_TOKEN }}
+        source-dir: './output'
+    - name: Output the deployment URL
+      run: echo "Site staged at ${{ steps.deploy.outputs.url }}"
