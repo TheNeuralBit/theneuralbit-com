@@ -31,4 +31,4 @@ jobs:
         pip install -r requirements.txt
     - name: Test Pelican Build
       run: |
-        python -m pelican --fatal warnings
+        python -m pelican -s publishconf.py --fatal warnings
