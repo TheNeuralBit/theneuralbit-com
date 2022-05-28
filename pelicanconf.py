@@ -5,7 +5,8 @@ from __future__ import unicode_literals
 AUTHOR = u'Brian Hulette'
 SITENAME = u'brian hulette'
 SITESUBTITLE = u''
-SITEURL = ''
+SITEURL = 'https://theneuralbit.com'
+RELATIVE_URLS = True
 STATIC_PATHS = ['images', 'media', 'code', 'keybase.txt']
 
 PATH = 'content'

@@ -31,7 +31,7 @@ jobs:
         pip install -r requirements.txt
     - name: Test Pelican Build
       run: |
-        python -m pelican -s publishconf.py --fatal warnings
+        python -m pelican --fatal warnings
     - name: Deploy to GoStatic
       id: deploy
       uses: DigitalSVN/GoStatic@v1.0
