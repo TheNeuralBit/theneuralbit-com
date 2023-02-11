@@ -1,7 +1,7 @@
 Jinja2==3.0.3
 html5lib==1.1
 ipython-genutils==0.1.0
-ipython==8.3.0
+ipython==8.10.0
 pelican-gist==0.3.3
 pelican-jupyter==0.10.1
 pelican==4.7.1
