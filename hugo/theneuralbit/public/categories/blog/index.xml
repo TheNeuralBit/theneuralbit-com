@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Blog on the neural bit</title>
+    <link>http://theneuralbit.com/categories/blog/</link>
+    <description>Recent content in Blog on the neural bit</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>true</copyright>
+    <lastBuildDate>Sun, 23 Oct 2016 00:00:00 -0400</lastBuildDate>
+    
+	<atom:link href="http://theneuralbit.com/categories/blog/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Poor Man&#39;s Threading (in Javascript)</title>
+      <link>http://theneuralbit.com/blog/poor-mans-threading/</link>
+      <pubDate>Sun, 23 Oct 2016 00:00:00 -0400</pubDate>
+      
+      <guid>http://theneuralbit.com/blog/poor-mans-threading/</guid>
+      <description>Javascript is single-threaded.
+I hear that all the time, but I think people&amp;rsquo;s interpretation of it is often an oversimplification. That statement is true within a single browser tab, but there are plenty of ways to get that browser to thread for you:
+ Asynchronous I/O (AJAX or FileReader). The browser handles all the details of this for you, but at the end of the day it&amp;rsquo;s doing some kind of multi-threading to handle the request, so your browser tab can do other work in the meantime.</description>
+    </item>
+    
+    <item>
+      <title>Fun with git stash</title>
+      <link>http://theneuralbit.com/blog/fun-with-git-stash/</link>
+      <pubDate>Wed, 10 Aug 2016 00:00:00 -0400</pubDate>
+      
+      <guid>http://theneuralbit.com/blog/fun-with-git-stash/</guid>
+      <description>If you&amp;rsquo;re anything like me, the only times you&amp;rsquo;ve ever used git stash it went something like this: In the middle of working on branch A you decided you should test something out on branch B. So you quickly run git stash, checkout branch B and test something, then come back to branch A, run git stash apply and pick back up where you left off.
+Well it turns out git stash is much more powerful than that, and we&amp;rsquo;ve all been missing out for years.</description>
+    </item>
+    
+  </channel>
+</rss>

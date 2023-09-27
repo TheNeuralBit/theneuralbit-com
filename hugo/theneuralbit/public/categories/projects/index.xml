@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Projects on the neural bit</title>
+    <link>http://theneuralbit.com/categories/projects/</link>
+    <description>Recent content in Projects on the neural bit</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>true</copyright>
+    <lastBuildDate>Mon, 18 Jan 2016 00:00:00 -0500</lastBuildDate>
+    
+	<atom:link href="http://theneuralbit.com/categories/projects/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Anagranimation</title>
+      <link>http://theneuralbit.com/blog/anagranimation/</link>
+      <pubDate>Mon, 18 Jan 2016 00:00:00 -0500</pubDate>
+      
+      <guid>http://theneuralbit.com/blog/anagranimation/</guid>
+      <description>The name of this website is an anagram. It&amp;rsquo;s possible to rearrange all of the letters in the neural bit to form brian hulette. That&amp;rsquo;s a simple concept I set out to illustrate concisely with the site&amp;rsquo;s logo.
+For the first iteration of this webpage, way back when I was in late high school and early college (ca. 2007), I just pulled up the Gimp, which I had probably learned to use just the previous week, and drew up the following image.</description>
+    </item>
+    
+    <item>
+      <title>M.Eng. Project - Simulation of Configurable Filter Banks Directed by a Cyclostationary Detector</title>
+      <link>http://theneuralbit.com/blog/meng-project/</link>
+      <pubDate>Tue, 26 May 2015 00:00:00 -0400</pubDate>
+      
+      <guid>http://theneuralbit.com/blog/meng-project/</guid>
+      <description>theneuralbit/cyclo_channelizer  !embedlycard</description>
+    </item>
+    
+    <item>
+      <title>This website</title>
+      <link>http://theneuralbit.com/blog/this-website/</link>
+      <pubDate>Thu, 05 Jun 2014 00:00:00 -0400</pubDate>
+      
+      <guid>http://theneuralbit.com/blog/this-website/</guid>
+      <description>&lt;p&gt;This site was adapted from my old, static HTML website.
+I wrote the original site way back in high school (with many updates throughout
+college), and it was beginning to show its age.  The biggest issue was that I
+didn&amp;rsquo;t create it with any sort of templating to begin with, so when I wanted to
+update the appearance, my changes had to be manually propogated to every page.
+Enter &lt;a href=&#34;http://jekyllrb.com/&#34;&gt;jekyll&lt;/a&gt; and &lt;a href=&#34;http://octopress.org&#34;&gt;octopress&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Comfortably Numb Solo Synthesis</title>
+      <link>http://theneuralbit.com/blog/comfortably-numb-synth/</link>
+      <pubDate>Mon, 25 Jul 2011 00:00:00 -0400</pubDate>
+      
+      <guid>http://theneuralbit.com/blog/comfortably-numb-synth/</guid>
+      <description>&lt;p&gt;During my last quarter at Rose-Hulman I took a great class called ECE481 -
+Electronic Music Synthesis.  In it, we discussed a lot of concepts used to
+synthesize music, including additive and destructive synthesis, FM synthesis,
+the Karplus-Strong algorithm, and various post-processing and mixing techniques.&lt;/p&gt;
+
+&lt;p&gt;As a final project for the course we were asked to create a song using some of
+the techniques we learned about.  For my project, I chose to synthesize the
+&lt;a href=&#34;http://www.youtube.com/watch?v=Bpzxf_flm8M#t=04m25s&#34;&gt;solo&lt;/a&gt; from the Pink Floyd
+song &amp;ldquo;Comfortably Numb&amp;rdquo; using the Karplus-Strong Algorithm.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>High-Altitude Imaging</title>
+      <link>http://theneuralbit.com/blog/high-altitude-imaging/</link>
+      <pubDate>Sun, 25 Jul 2010 00:00:00 -0400</pubDate>
+      
+      <guid>http://theneuralbit.com/blog/high-altitude-imaging/</guid>
+      <description>&lt;p&gt;In the spring of 2010 my brother and I decided we would like to launch a camera
+into near-space, in order to take images of the earth from 90,000+ feet.  We
+were primarily inspired by a well known project completed by some MIT students
+called &lt;a href=&#34;http://space.1337arts.com&#34;&gt;Project Icarus&lt;/a&gt;. They became somewhat famous
+in the fall of 2009 by launching their vehicle into the stratosphere for less
+than $150. We have also utilized resources from the
+&lt;a href=&#34;http://ukhas.org.uk&#34;&gt;UK High-Altitude Society&lt;/a&gt; for various information regarding
+this project.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Timelapse Photography</title>
+      <link>http://theneuralbit.com/blog/timelapse/</link>
+      <pubDate>Tue, 06 Jul 2010 00:00:00 -0400</pubDate>
+      
+      <guid>http://theneuralbit.com/blog/timelapse/</guid>
+      <description>&lt;p&gt;I recently acquired a Canon PowerShot A530 camera, and decided to use it to take
+a few timelapse videos. I installed the
+&lt;a href=&#34;http://chdk.wikia.com/wiki/CHDK&#34;&gt;Canon Hardware Development Kit (CHDK)&lt;/a&gt; on it,
+which gives me a lot more control over the camera&amp;rsquo;s settings. You
+can use it to write scripts to automatically control the camera.  I used
+&lt;a href=&#34;http://chdk.wikia.com/wiki/UBASIC/Scripts:_Ultra_Intervalometer&#34;&gt;this simple script&lt;/a&gt; to
+capture the pictures for these timelapses.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>LED Audio Visualizer</title>
+      <link>http://theneuralbit.com/blog/led-audio-visualizer/</link>
+      <pubDate>Tue, 15 Jun 2010 00:00:00 -0400</pubDate>
+      
+      <guid>http://theneuralbit.com/blog/led-audio-visualizer/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;{filename}/images/led_visualizer.jpg&#34; alt=&#34;Completed LED Visualizer&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;In my Embedded Systems Design class, we were required to create a final project
+of our choosing which demonstrated our understanding of the course concepts. My
+partner and I decided to create an Audio Visualizer for our final project. The
+idea was to display the audio spectrum in real-time (calculated with an FFT) on
+an LED Matrix.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Carputer</title>
+      <link>http://theneuralbit.com/blog/carputer/</link>
+      <pubDate>Sun, 05 Jul 2009 00:00:00 -0400</pubDate>
+      
+      <guid>http://theneuralbit.com/blog/carputer/</guid>
+      <description>&lt;p&gt;A few months after I got my new Volvo S70, I began to think that the stereo
+head unit would be perfect for a carputer (car computer). It&amp;rsquo;s a rather large
+head unit, probably about twice as tall as a typical one, so there would be
+plenty of space inside for a computer and the other necessary electronics. The
+other great thing about it is that you can remove it just by popping two tabs
+and pulling it out, making debugging really easy.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Predator-Prey Simulation</title>
+      <link>http://theneuralbit.com/blog/predator-prey-sim/</link>
+      <pubDate>Mon, 02 Feb 2009 00:00:00 -0500</pubDate>
+      
+      <guid>http://theneuralbit.com/blog/predator-prey-sim/</guid>
+      <description>&lt;p&gt;This project was inspired by two classes that I took.  The first was
+Introduction to Complex Systems, which I took my senior year in high school. It
+was a sort of review of a lot of interesting high level math concepts, we spent
+a while talking about &lt;a href=&#34;http://en.wikipedia.org/wiki/Fractal&#34;&gt;fractals&lt;/a&gt; and
+&lt;a href=&#34;http://en.wikipedia.org/wiki/Mandelbrot_set&#34;&gt;the mandelbrot set&lt;/a&gt;, and then
+moved on to what really interested me, cellular automata.&lt;/p&gt;
+
+&lt;p&gt;The idea of cellular automata is to make a lot of little cells that follow some
+relatively simple rules, but when you watch their overall behavior over a lot of
+iterations some interesting patterns form. The most famous example is
+&lt;a href=&#34;http://en.wikipedia.org/wiki/conway&#39;s_game_of_life&#34;&gt;conway&amp;rsquo;s game of life&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;The second class, which I took my freshman year of college was Differential
+Equations 2. In this class we modeled a lot of random things t demostrate
+differential equations and one such model was the populations of predators and
+prey living in the same area. If you fiddle with the constants in the model just
+right you can end up with two sinusoidal populations with the prey wave lagging
+the predator wave a little bit. The idea is that when there are a lot of
+predators, they kill off the prey, but when the prey populations gets so low,
+the predators begin to starve, so the prey have time to reproduce and so on.&lt;/p&gt;
+
+&lt;p&gt;So one day in DE2 I began to drift off and came up with the idea of making a
+predator prey simulation using cellular automata, and this is the result.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Stack Processor utnik (S.P.utnik)</title>
+      <link>http://theneuralbit.com/blog/sputnik/</link>
+      <pubDate>Sat, 31 Jan 2009 00:00:00 -0500</pubDate>
+      
+      <guid>http://theneuralbit.com/blog/sputnik/</guid>
+      <description>&lt;p&gt;During Fall quarter of my Sophomore year at Rose I took Computer Architecture.
+For most of the quarter, the class is assigned to design a 16-bit processor in
+teams of 4. These are the results of that project for my group.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Clock in a Book</title>
+      <link>http://theneuralbit.com/blog/clockbook/</link>
+      <pubDate>Wed, 21 Jan 2009 00:00:00 -0500</pubDate>
+      
+      <guid>http://theneuralbit.com/blog/clockbook/</guid>
+      <description>Over the summer I needed an amplifier for my TV visualizer. I bought a kit for one online, but the site I bought it from had a minimum purchase price, so I decided to buy a led clock kit to go with it. Once I had the clock all soldered up, I couldn&amp;rsquo;t find anything to put it in. Then I realized that I could use the same technique I used for my hollow book to cut slots in a book for the clock components.</description>
+    </item>
+    
+    <item>
+      <title>Hollow Book</title>
+      <link>http://theneuralbit.com/blog/hollowbook/</link>
+      <pubDate>Wed, 21 Jan 2009 00:00:00 -0500</pubDate>
+      
+      <guid>http://theneuralbit.com/blog/hollowbook/</guid>
+      <description>My senior year of high school, my roommate and I stumbled on [this tutorial][http://www.wikihow.com/Make-a-Hollow-Book] on making a hollow book. We decided it would be pretty cool to have one, so I pulled a book that I had already read off the shelf and we got to work. We finished cutting it up and gluing it that same night.
+At first we used it to store our contraband - Nothing really bad, our high school didn&amp;rsquo;t let us keep things like matches or extension cords in our rooms, which we thought was ridiculous.</description>
+    </item>
+    
+  </channel>
+</rss>

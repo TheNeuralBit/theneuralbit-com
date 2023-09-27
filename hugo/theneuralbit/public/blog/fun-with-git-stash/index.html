@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+<meta name="pinterest" content="nopin">
+<meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+<meta name="theme-color" content="#263238">
+
+<meta name="generator" content="Hugo 0.26" />
+
+<link rel="apple-touch-icon" href="http://theneuralbit.com/images/logo.png">
+
+
+<link rel="canonical" href="http://theneuralbit.com/blog/fun-with-git-stash/">
+
+
+    
+    <link href="//fonts.googleapis.com/css?family=Noto+Sans:400,700|Montserrat" rel="stylesheet">
+    
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/solarized_dark.min.css">
+    <title>Fun with git stash - the neural bit</title>
+    
+<meta name="description" content="If you&amp;rsquo;re anything like me, the only times you&amp;rsquo;ve ever used git stash it went something like this: In the middle of working on branch A you decided you should test something out on branch B. So you quickly run git stash, checkout branch B and test something, then come back to branch A, run git stash apply and pick back up where you left off.Well it turns out git stash is much more powerful than that, and we&amp;rsquo;ve all been missing out for years.">
+
+<meta property="og:title" content="Fun with git stash - the neural bit">
+<meta property="og:type" content="article">
+<meta property="og:url" content="http://theneuralbit.com/blog/fun-with-git-stash/">
+<meta property="og:image" content="http://theneuralbit.com/images/default.png">
+<meta property="og:site_name" content="the neural bit">
+<meta property="og:description" content="If you&amp;rsquo;re anything like me, the only times you&amp;rsquo;ve ever used git stash it went something like this: In the middle of working on branch A you decided you should test something out on branch B. So you quickly run git stash, checkout branch B and test something, then come back to branch A, run git stash apply and pick back up where you left off.Well it turns out git stash is much more powerful than that, and we&amp;rsquo;ve all been missing out for years.">
+<meta property="og:locale" content="ja_JP">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="the neural bit">
+<meta name="twitter:url" content="http://theneuralbit.com/blog/fun-with-git-stash/">
+<meta name="twitter:title" content="Fun with git stash - the neural bit">
+<meta name="twitter:description" content="If you&amp;rsquo;re anything like me, the only times you&amp;rsquo;ve ever used git stash it went something like this: In the middle of working on branch A you decided you should test something out on branch B. So you quickly run git stash, checkout branch B and test something, then come back to branch A, run git stash apply and pick back up where you left off.Well it turns out git stash is much more powerful than that, and we&amp;rsquo;ve all been missing out for years.">
+<meta name="twitter:image" content="http://theneuralbit.com/images/default.png">
+
+
+<script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "NewsArticle",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id":"http://theneuralbit.com/"
+    },
+    "headline": "Fun with git stash - the neural bit",
+    "image": {
+      "@type": "ImageObject",
+      "url": "http://theneuralbit.com/images/default.png",
+      "height": 800,
+      "width": 800
+    },
+    "datePublished": "2016-08-10T00:00:00JST",
+    "dateModified": "2016-08-10T00:00:00JST",
+    "author": {
+      "@type": "Person",
+      "name": "the neural bit"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "the neural bit",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "http://theneuralbit.com/images/logo.png",
+        "width": 600,
+        "height": 60
+      }
+    },
+    "description": "If you&rsquo;re anything like me, the only times you&rsquo;ve ever used git stash it went something like this: In the middle of working on branch A you decided you should test something out on branch B. So you quickly run git stash, checkout branch B and test something, then come back to branch A, run git stash apply and pick back up where you left off.
+Well it turns out git stash is much more powerful than that, and we&rsquo;ve all been missing out for years."
+  }
+</script>
+
+
+    <style>
+      html { font-size: 18px;}@media (max-width: 768px) { html { font-size: 15px; }}body { font-family: 'Noto Sans','Hiragino Kaku Gothic Pro',メイリオ,Meiryo,sans-serif; font-size: inherit; font-weight: 300; line-height: 1rem; background-color: #eceff1;}p { margin: 0;}a { color: #4caf50;}a:hover { text-decoration: none; color: #388e3c;}ul,ol { margin: 0; padding: 0;}h1, h2, h3, h4, h5, h6 { margin: 0; font-weight: 700;}h1 { font-size: 1.8rem; line-height: 2rem; margin: 1.5rem 0; }h2 { font-size: 1.4rem; line-height: 2rem; margin: 1.5rem 0; }h3 { font-size: 1.2rem; line-height: 1.5rem; margin: 1.5rem 0; }h4, h5, h6 { font-size: 1rem; line-height: 1.5rem; margin: 1.5rem 0; }main { display: block;}.content-inner { padding: 1rem 2rem;}.content-inner.thin { padding: .5rem 1rem;}@media (max-width: 768px) { .content-inner { padding: 1rem; }}/* Override */.container { position: relative;}/* Parts:layouts */.l-header { background-color: #fff; margin-bottom: 1rem; padding: 1rem 0; text-align: center;}.l-footer { font-size: .8rem; padding: 1.5rem 0;}/* Parts:menu */.p-menu { position: absolute; right: 15px; top: 0;}/* Parts:terms */.p-terms { list-style: none;}.p-terms .terms-title { margin: 0;}.p-terms a { display: inline-block; padding: .25rem 0;}.p-terms.inline li { display: inline-block; font-size: .8rem;}.p-terms.inline li::after { content: ',';}.p-terms.inline li:last-child::after { content: '';}/* Parts:paging */.p-paging { margin-bottom: 1.5rem; text-align: center;}.p-paging a { display: inline-block; padding: 1rem 1.5rem; margin: 0 .5rem; background-color: #cfd8dc; color: #263238;}/* Parts:section */section { margin-bottom: 1.5rem;}section>header { font-size: .8rem; font-weight: 700; margin-bottom: .5rem; text-transform: uppercase;}section>header a { color: #333; text-decoration: underline;}section.article-footer { margin-bottom: 1rem;}section.article-footer>header { margin-bottom: 0;}/* Parts:share */.p-share { min-width: 100%; margin-bottom: 1.5rem;}.p-share .share-inner { display: table; table-layout: fixed; width: 100%; border-spacing: .25rem;}.p-share a { display: table-cell; text-align: center; font-weight: 700; font-size: .7rem; padding: .5rem 0; color: #fff; border-radius: 5px;}.p-share a.ht { background-color: #00a4de; border-bottom: 2px solid #0083b1; }.p-share a.fb { background-color: #3b5998; border-bottom: 2px solid #2f4779; }.p-share a.tw { background-color: #1da1f2; border-bottom: 2px solid #1780c1; }.p-share a.gp { background-color: #dd4b39; border-bottom: 2px solid #b03c2d; }.p-share a.ln { background-color: #00c300; border-bottom: 2px solid #009c00; }.p-share a.ht::before { content: 'Hatena'; }.p-share a.fb::before { content: 'Facebook'; }.p-share a.tw::before { content: 'Twitter'; }.p-share a.gp::before { content: 'Google+'; }.p-share a.ln::before { content: 'LINE'; }/* Parts:logo */.h-logo { font-family: 'Montserrat', sans-serif;}.p-logo { display: inline-block; text-transform: uppercase;}.p-logo a { display: inline-block; font-size: 1.4rem; line-height: 2rem; color: #000;}/* Parts:crumb */.p-crumb ol { list-style: none; margin-bottom: 1rem;}.p-crumb li { display: inline; margin-right: .25rem; font-size: .8rem; color: #607d8b;}.p-crumb li::after { content: '/'; margin-left: .25rem;}.p-crumb li:last-child::after { content: '';}/* Parts:facts */.p-facts { list-style: none; font-size: .8rem; margin-bottom: 1rem;}.p-facts li { display: inline-block; margin-right: .5rem; color: #90a4ae;}.p-facts li i { margin-right: .5rem; color: #cfd8dc;}/* Parts:article */article { background-color: #fff;}article .title { margin: 0; margin-bottom: .5rem; font-weight: 700;}article .title a { color: #000;}article .thumb { display: block; background-image: url(http://theneuralbit.com/images/default.jpg); background-position: center; background-size: cover;}article .summary { margin-bottom: .5rem; max-height: 5rem; overflow: hidden;}article.single .thumb { height: 18rem; margin-bottom: 1rem;}@media (max-width: 768px) { article.single .thumb { height: 12rem; }}article.li { margin-bottom: 1rem;}article.li .thumb { height: 7.5rem; margin-bottom: .5rem;}article.li.sm { background-color: transparent; margin-bottom: .5rem;}article.li.sm>header { padding: .5rem 0;}article.li.sm .title { font-size: .8rem; line-height: 1rem; margin-bottom: .25rem;}article.li.sm .p-facts { font-size: .6rem; margin-bottom: 0;}article.li.sm .thumb { float: left; margin-right: .5rem; height: 3rem; width: 3rem;}.article-body h2 { padding: 1rem 0; border-bottom: 2px solid #eceff1;}.article-body h2:first-child { margin-top: 0; }.article-body h3 { color: #428bca;}.article-body h4 { border-left: solid .25rem #428bca; padding: 0 .5rem;}.article-body p { margin: 1.5rem 0; line-height: 1.5rem;}.article-body a { text-decoration: underline;}.article-body ul,.article-body ol { padding-left: 1.5rem;}.article-body code { display: inline-block; font-family: Menlo, consolas, monospace; font-size: .8rem; padding: 0 .5rem; line-height: 1.5rem;}.article-body pre { margin: 1.5rem 0; padding: 0; font-size: .8rem; border: none; border-radius: 0;}.article-body pre code { display: block; line-height: 1rem; padding: 1rem;}.article-body blockquote { margin: 1.5rem 0; padding: .5rem 0; font-size: .8rem; border-top: 1px solid #eceff1; border-bottom: 1px solid #eceff1; color: #607d8b;}.article-body blockquote p { margin: .5rem 0; line-height: 1rem;}.article-body strong { box-shadow: 0 -.5rem 0 0 #90caf9 inset;}.article-body em { font-style: normal; font-weight: 700; color: #03a9f4;}.article-body figure { margin: 1.5rem 0; }.article-body figure img { max-width: 100%; }.article-body figure.left,.article-body figure.right { width: 15rem; height: 12rem; margin-top: 0;}.article-body figure.left { float: left; margin-right: 1rem; }.article-body figure.right { float: right; margin-left: 1rem; }@media (max-width: 768px) { .article-body figure.left, .article-body figure.right { float: none; margin: 0; width: auto; height: auto; }}.article-body figcaption { padding: .5rem 0; font-size: .8rem; text-align: center;}.article-body figcaption a { color: #263238;}
+      
+      
+    </style>
+  </head>
+
+  <body>
+    
+    
+    
+
+    <header class="l-header">
+      <div class="container">
+        <div class="p-logo">
+          <a href="http://theneuralbit.com/" class="h-logo">the neural bit</a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="container">
+        
+<div class="row">
+  <div class="col-md-8">
+
+    <nav class="p-crumb">
+      <ol>
+        <li><a href="http://theneuralbit.com/"><i class="fa fa-home" aria-hidden="true"></i></a></li>
+        
+        <li itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="http://theneuralbit.com/blog/" itemprop="url"><span itemprop="title">blog</span></a></li>
+        
+        <li class="active">Fun with git stash</li>
+      </ol>
+    </nav>
+
+    <article class="single">
+
+  <a href="http://theneuralbit.com/blog/fun-with-git-stash/" class="thumb"></a>
+  <div class="content-inner">
+    <h1 class="title">Fun with git stash</h1>
+
+    <ul class="p-facts">
+      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2016-08-10T00:00:00JST">Aug 10, 2016</time></li>
+      <li><i class="fa fa-bookmark" aria-hidden="true"></i><a href="http://theneuralbit.com/blog/">blog</a></li>
+      
+    </ul>
+
+    <div class="article-body">
+
+<p>If you&rsquo;re anything like me, the only times you&rsquo;ve ever used <code>git stash</code> it went
+something like this: In the middle of working on branch <strong>A</strong> you decided you
+should test something out on branch <strong>B</strong>.  So you quickly run <code>git stash</code>,
+checkout branch <strong>B</strong> and test something, then come back to branch <strong>A</strong>, run <code>git
+stash apply</code> and pick back up where you left off.</p>
+
+<p>Well it turns out <code>git stash</code> is much more powerful than that, and we&rsquo;ve all
+been missing out <em>for years</em>. I always knew somewhere in the back of my head that
+<code>git stash</code> operated some kind of stack, but I just kept happily pushing things
+onto the stack without worrying about what that really meant.</p>
+
+<p>One day I decided to take a look at <a href="https://git-scm.com/docs/git-stash"><code>git help
+stash</code></a> and I suddenly realized I could
+be getting a lot more use out of this little command.  First I learned about
+the <code>list</code> subcommand, which shows the entire contents of that stack. The first
+time I tried it out it was a mess:</p>
+
+<pre><code class="language-sh"># git stash list
+stash@{0}: WIP on master: ad4304a fixed bug
+stash@{1}: WIP on master: bffb5b9 added feature
+stash@{2}: WIP on master: 4a70758 it works!
+stash@{3}: WIP on master: 4a70758 it works!
+stash@{4}: WIP on feature-a: d5d384a wow this is great
+stash@{5}: WIP on master: d2abda9 finally fixed it
+...
+</code></pre>
+
+<p>What happened here? It turns out every time I had run <code>git stash</code> before
+I knew what I was doing I was pushing a new stash onto the stack. Then when
+I got my changes back by running <code>git stash apply</code>, git just peeked at the most
+recent stash , applied its changes, and left it sitting on the stack. There&rsquo;s
+another command, <code>pop</code>, which applies the stash <em>and</em> pops it off the stack.</p>
+
+<p>So every single stash I&rsquo;ve ever created is just hanging out here on the stack,
+and that is reflected in the <code>git stash list</code> output.</p>
+
+<h1 id="so-there-s-a-stack-so-what">So there&rsquo;s a stack? So what?</h1>
+
+<p>So all I&rsquo;ve really learned at this point is that I should use <code>pop</code> instead
+of <code>apply</code> to make sure I clean up after myself, but does this stack let me
+do anything else?</p>
+
+<p>For a lot of projects I have a few small changes I find myself making and
+undoing all the time. For example changing the configuration to point to a
+development server, or adding some sort of debug output. I realized that I can
+use the stash stack to store these various patches and apply them at will.</p>
+
+<h2 id="my-new-stash-workflow">My new stash Workflow</h2>
+
+<p>If you run <code>git stash save</code> explicitly instead of the shortcut, <code>git stash</code>,
+you can specify a message for the stash, something more descriptive than &ldquo;WIP
+on &hellip;&ldquo;, like <code>git stash save add debug info</code>. So now, after adding a few
+useful stashes, my stack looks like this:</p>
+
+<pre><code class="language-sh"># git stash list
+stash@{0}: On master: add debug info
+stash@{1}: On master: use local server
+</code></pre>
+
+<p>Much better! Now how do I use these patches? Since I want to apply the patch
+while still keeping it around on the stack, I can go back to my old friend
+<code>apply</code>. It turns out you can also specify which stash you want to apply,
+so I can switch to the local server by running <code>git stash apply stash@{1}</code>.</p>
+
+<p>Now what if I&rsquo;ve made some other changes, and I&rsquo;d like to &ldquo;unapply&rdquo; that stash?
+There&rsquo;s no built-in way to do it, but <a href="http://stackoverflow.com/a/1021867">this SO
+answer</a> points out a way to hack it
+together, by printing out the patch and applying it in reverse:</p>
+
+<pre><code class="language-sh">git stash show -p stash@{1} | git apply --reverse
+</code></pre>
+
+<p>These commands are useful, but a little bit wordy. I added some aliases to
+<code>~/.gitconfig</code> to make it easier:</p>
+
+<pre><code>stapply = &quot;!f() { git stash apply stash@{$1}; }; f&quot;
+stunapply = &quot;!f() { git stash show -p stash@{$1} | git apply --reverse; git status; }; f&quot;
+</code></pre>
+
+<p>Now all I have to type is <code>git stapply 1</code> and <code>git stunapply 1</code> to toggle the
+local server on and off.</p>
+</div>
+  </div>
+
+  <footer class="article-footer">
+    <div class="content-inner">
+
+      <aside class="p-share">
+  <div class="share-inner">
+    <a href="http://b.hatena.ne.jp/add?mode=confirm&url=http%3a%2f%2ftheneuralbit.com%2fblog%2ffun-with-git-stash%2f&title=Fun%20with%20git%20stash" title="はてなブックマーク" class="ht" target="_blank" rel="nofollow"></a>
+    <a href="http://www.facebook.com/sharer.php?u=http%3a%2f%2ftheneuralbit.com%2fblog%2ffun-with-git-stash%2f&t=Fun%20with%20git%20stash" title="Facebookでシェア" class="fb" target="_blank" rel="nofollow"></a>
+    <a href="http://twitter.com/intent/tweet?url=http%3a%2f%2ftheneuralbit.com%2fblog%2ffun-with-git-stash%2f&text=Fun%20with%20git%20stash&tw_p=tweetbutton" title="Twitterでシェア" class="tw" target="_blank" rel="nofollow"></a>
+    <a href="https://plus.google.com/share?url=http%3a%2f%2ftheneuralbit.com%2fblog%2ffun-with-git-stash%2f" title="Google Plusでシェア" class="gp" target="_blank" rel="nofollow"></a>
+    <a href="http://line.me/R/msg/text/?Fun%20with%20git%20stash http%3a%2f%2ftheneuralbit.com%2fblog%2ffun-with-git-stash%2f" title="LINEでシェア" class="ln" target="_blank" rel="nofollow"></a>
+  </div>
+</aside>
+
+
+      <nav class="p-crumb">
+        <ol>
+          <li><a href="http://theneuralbit.com/"><i class="fa fa-home" aria-hidden="true"></i></a></li>
+          
+          <li itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="http://theneuralbit.com/blog/" itemprop="url"><span itemprop="title">blog</span></a></li>
+          
+          <li class="active">Fun with git stash</li>
+        </ol>
+      </nav>
+
+      
+      
+      
+      <section class="article-footer">
+        <header>
+          <a href="http://theneuralbit.com/categories/">CATEGORIES</a>
+        </header>
+        <div>
+          <ul class="p-terms inline">
+            
+            <li><a href="http://theneuralbit.com/categories/blog/">blog</a></li>
+            
+          </ul>
+        </div>
+      </section>
+      
+      
+      
+      
+    </div>
+  </footer>
+
+</article>
+
+
+    
+  </div>
+
+  <div class="col-md-4">
+    <aside class="site">
+
+  <section>
+    <header>latests</header>
+    <div>
+      <div class="row">
+        
+        <div class="col-md-12 col-sm-6 col-xs-12"><article class="li sm">
+  <a href="http://theneuralbit.com/blog/poor-mans-threading/" class="thumb"></a>
+  <header>
+    <div class="title"><a href="http://theneuralbit.com/blog/poor-mans-threading/">Poor Man&#39;s Threading (in Javascript)</a></div>
+
+    <ul class="p-facts">
+      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2016-10-23T00:00:00JST">Oct 23, 2016</time></li>
+      <li><i class="fa fa-bookmark" aria-hidden="true"></i><a href="http://theneuralbit.com/blog/">blog</a></li>
+    </ul>
+  </header>
+</article>
+</div>
+        
+        
+        <div class="col-md-12 col-sm-6 col-xs-12"><article class="li sm">
+  <a href="http://theneuralbit.com/blog/fun-with-git-stash/" class="thumb"></a>
+  <header>
+    <div class="title"><a href="http://theneuralbit.com/blog/fun-with-git-stash/">Fun with git stash</a></div>
+
+    <ul class="p-facts">
+      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2016-08-10T00:00:00JST">Aug 10, 2016</time></li>
+      <li><i class="fa fa-bookmark" aria-hidden="true"></i><a href="http://theneuralbit.com/blog/">blog</a></li>
+    </ul>
+  </header>
+</article>
+</div>
+        <div class="col-sm-12"></div>
+        
+        <div class="col-md-12 col-sm-6 col-xs-12"><article class="li sm">
+  <a href="http://theneuralbit.com/blog/anagranimation/" class="thumb"></a>
+  <header>
+    <div class="title"><a href="http://theneuralbit.com/blog/anagranimation/">Anagranimation</a></div>
+
+    <ul class="p-facts">
+      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2016-01-18T00:00:00JST">Jan 18, 2016</time></li>
+      <li><i class="fa fa-bookmark" aria-hidden="true"></i><a href="http://theneuralbit.com/blog/">blog</a></li>
+    </ul>
+  </header>
+</article>
+</div>
+        
+        
+        <div class="col-md-12 col-sm-6 col-xs-12"><article class="li sm">
+  <a href="http://theneuralbit.com/blog/meng-project/" class="thumb"></a>
+  <header>
+    <div class="title"><a href="http://theneuralbit.com/blog/meng-project/">M.Eng. Project - Simulation of Configurable Filter Banks Directed by a Cyclostationary Detector</a></div>
+
+    <ul class="p-facts">
+      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2015-05-26T00:00:00JST">May 26, 2015</time></li>
+      <li><i class="fa fa-bookmark" aria-hidden="true"></i><a href="http://theneuralbit.com/blog/">blog</a></li>
+    </ul>
+  </header>
+</article>
+</div>
+        <div class="col-sm-12"></div>
+        
+        <div class="col-md-12 col-sm-6 col-xs-12"><article class="li sm">
+  <a href="http://theneuralbit.com/blog/latex-environment/" class="thumb"></a>
+  <header>
+    <div class="title"><a href="http://theneuralbit.com/blog/latex-environment/">My LaTeX Development Environment</a></div>
+
+    <ul class="p-facts">
+      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2014-08-09T00:00:00JST">Aug 9, 2014</time></li>
+      <li><i class="fa fa-bookmark" aria-hidden="true"></i><a href="http://theneuralbit.com/blog/">blog</a></li>
+    </ul>
+  </header>
+</article>
+</div>
+        
+        
+        <div class="col-md-12 col-sm-6 col-xs-12"><article class="li sm">
+  <a href="http://theneuralbit.com/blog/viterbi-analysis/" class="thumb"></a>
+  <header>
+    <div class="title"><a href="http://theneuralbit.com/blog/viterbi-analysis/">Analyzing the Viterbi Algorithm</a></div>
+
+    <ul class="p-facts">
+      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2014-07-19T00:00:00JST">Jul 19, 2014</time></li>
+      <li><i class="fa fa-bookmark" aria-hidden="true"></i><a href="http://theneuralbit.com/blog/">blog</a></li>
+    </ul>
+  </header>
+</article>
+</div>
+        <div class="col-sm-12"></div>
+        
+        <div class="col-md-12 col-sm-6 col-xs-12"><article class="li sm">
+  <a href="http://theneuralbit.com/blog/this-website/" class="thumb"></a>
+  <header>
+    <div class="title"><a href="http://theneuralbit.com/blog/this-website/">This website</a></div>
+
+    <ul class="p-facts">
+      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2014-06-05T00:00:00JST">Jun 5, 2014</time></li>
+      <li><i class="fa fa-bookmark" aria-hidden="true"></i><a href="http://theneuralbit.com/blog/">blog</a></li>
+    </ul>
+  </header>
+</article>
+</div>
+        
+        
+        <div class="col-md-12 col-sm-6 col-xs-12"><article class="li sm">
+  <a href="http://theneuralbit.com/blog/comfortably-numb-synth/" class="thumb"></a>
+  <header>
+    <div class="title"><a href="http://theneuralbit.com/blog/comfortably-numb-synth/">Comfortably Numb Solo Synthesis</a></div>
+
+    <ul class="p-facts">
+      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2011-07-25T00:00:00JST">Jul 25, 2011</time></li>
+      <li><i class="fa fa-bookmark" aria-hidden="true"></i><a href="http://theneuralbit.com/blog/">blog</a></li>
+    </ul>
+  </header>
+</article>
+</div>
+        <div class="col-sm-12"></div>
+        
+        <div class="col-md-12 col-sm-6 col-xs-12"><article class="li sm">
+  <a href="http://theneuralbit.com/blog/high-altitude-imaging/" class="thumb"></a>
+  <header>
+    <div class="title"><a href="http://theneuralbit.com/blog/high-altitude-imaging/">High-Altitude Imaging</a></div>
+
+    <ul class="p-facts">
+      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2010-07-25T00:00:00JST">Jul 25, 2010</time></li>
+      <li><i class="fa fa-bookmark" aria-hidden="true"></i><a href="http://theneuralbit.com/blog/">blog</a></li>
+    </ul>
+  </header>
+</article>
+</div>
+        
+        
+        <div class="col-md-12 col-sm-6 col-xs-12"><article class="li sm">
+  <a href="http://theneuralbit.com/blog/timelapse/" class="thumb"></a>
+  <header>
+    <div class="title"><a href="http://theneuralbit.com/blog/timelapse/">Timelapse Photography</a></div>
+
+    <ul class="p-facts">
+      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2010-07-06T00:00:00JST">Jul 6, 2010</time></li>
+      <li><i class="fa fa-bookmark" aria-hidden="true"></i><a href="http://theneuralbit.com/blog/">blog</a></li>
+    </ul>
+  </header>
+</article>
+</div>
+        <div class="col-sm-12"></div>
+        
+      </div>
+    </div>
+  </section>
+
+  
+  <section>
+    <header>category</header>
+    <div>
+      <ul class="p-terms">
+        <li><a href="http://theneuralbit.com/categories/projects">projects</a></li><li><a href="http://theneuralbit.com/categories/blog">blog</a></li>
+      </ul>
+    </div>
+  </section>
+  
+  <section>
+    <header>tag</header>
+    <div>
+      <ul class="p-terms">
+        
+      </ul>
+    </div>
+  </section>
+  
+
+</aside>
+
+  </div>
+</div>
+
+      </div>
+    </main>
+
+    <footer class="l-footer">
+      <div class="container">
+        <p>true</p>
+        <aside>
+          <p>Powered by <a href="https://gohugo.io/">Hugo</a>.</p>
+          <p><a href="https://github.com/dim0627/hugo_theme_robust">Robust</a> designed by <a href="http://yet.unresolved.xyz/">Daisuke Tsuji</a>.</p>
+        </aside>
+      </div>
+    </footer>
+
+    <script src="//code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+  </body>
+</html>
+

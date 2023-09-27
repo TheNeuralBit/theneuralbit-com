@@ -1,0 +1,41 @@
++++
+title = "Stack Processor utnik (S.P.utnik)"
+slug = "sputnik"
+type = "post"
+categories = ["projects"]
+date = 2009-01-31
+draft = "False"
++++
+
+During Fall quarter of my Sophomore year at Rose I took Computer Architecture.
+For most of the quarter, the class is assigned to design a 16-bit processor in
+teams of 4. These are the results of that project for my group.
+
+<!--more-->
+
+## Design
+
+In most of our lectures we discussed the MIPS architecture. When my team began
+working on this project we recognized that most other teams would simply copy
+the MIPS architecture and modify it to make it 16-bits. This is not an easy task
+in itself, but we wanted to be different, we wanted to do something no one else
+had done or was going to do. So we decided we would make our processor a stack
+based processor.
+
+These are a few of the design documents we had to make throughout the quarter:
+
+  * [Final Design Document]({static}./media/sputnik.pdf) \- A compilation of most of the documentation we
+    created throughout the quarter.
+  * [Original Datapath]({static}./images/sputnik_datapath.png) \- This is our original (Hand drawn) design for the
+    datapath. Its a little messy, but hopefully understandable.
+  * [Final Datapath]({static}./images/datapath.pdf) \- This is our final datapath drawing. Not much
+    different from the original but much easier to read.
+
+## FPGA Implementation
+
+We actually managed to get the processor design onto our FPGA, and ran a few
+simple programs to test it. However the entire assignment was to implement a
+processor and run a specific program (C code for this program was given) and we
+were unable to write this program in our machine code in time. So, technically,
+we didnt finish the project, but we did manage to get the processor itself on
+the FPGA, which a lot of groups had trouble with.

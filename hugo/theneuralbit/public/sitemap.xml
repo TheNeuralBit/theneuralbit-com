@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>http://theneuralbit.com/blog/poor-mans-threading/</loc>
+    <lastmod>2016-10-23T00:00:00-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://theneuralbit.com/blog/fun-with-git-stash/</loc>
+    <lastmod>2016-08-10T00:00:00-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://theneuralbit.com/blog/anagranimation/</loc>
+    <lastmod>2016-01-18T00:00:00-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://theneuralbit.com/blog/meng-project/</loc>
+    <lastmod>2015-05-26T00:00:00-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://theneuralbit.com/blog/latex-environment/</loc>
+    <lastmod>2014-08-09T00:00:00-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://theneuralbit.com/blog/viterbi-analysis/</loc>
+    <lastmod>2014-07-19T00:00:00-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://theneuralbit.com/blog/this-website/</loc>
+    <lastmod>2014-06-05T00:00:00-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://theneuralbit.com/blog/comfortably-numb-synth/</loc>
+    <lastmod>2011-07-25T00:00:00-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://theneuralbit.com/blog/high-altitude-imaging/</loc>
+    <lastmod>2010-07-25T00:00:00-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://theneuralbit.com/blog/timelapse/</loc>
+    <lastmod>2010-07-06T00:00:00-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://theneuralbit.com/blog/led-audio-visualizer/</loc>
+    <lastmod>2010-06-15T00:00:00-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://theneuralbit.com/blog/carputer/</loc>
+    <lastmod>2009-07-05T00:00:00-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://theneuralbit.com/blog/predator-prey-sim/</loc>
+    <lastmod>2009-02-02T00:00:00-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://theneuralbit.com/blog/sputnik/</loc>
+    <lastmod>2009-01-31T00:00:00-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://theneuralbit.com/blog/clockbook/</loc>
+    <lastmod>2009-01-21T00:00:00-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://theneuralbit.com/blog/hollowbook/</loc>
+    <lastmod>2009-01-21T00:00:00-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://theneuralbit.com/categories/blog/</loc>
+    <lastmod>2016-10-23T00:00:00-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://theneuralbit.com/blog/</loc>
+    <lastmod>2016-10-23T00:00:00-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://theneuralbit.com/categories/</loc>
+    <lastmod>2016-10-23T00:00:00-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://theneuralbit.com/categories/projects/</loc>
+    <lastmod>2016-01-18T00:00:00-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://theneuralbit.com/tags/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://theneuralbit.com/</loc>
+    <lastmod>2016-10-23T00:00:00-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+</urlset>

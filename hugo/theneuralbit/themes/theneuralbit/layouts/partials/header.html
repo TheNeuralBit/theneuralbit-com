@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>{{ .Site.Title }}</title>
+  <meta name="author" content="{{ .Site.Params.Author }}">
+  <link href="/styles/style.css" media="screen, projection"
+        rel="stylesheet" type="text/css">
+</head>
+<body>
+  <!-- offset-top should equal the less expression
+       @navbar-affix-top-height - @navbar-affix-height -->
+  <nav class="navbar-default affix-top" data-spy="affix" data-offset-top="50">
+    <div class="container">
+      <div class="navbar-header" id="header" style="position: relative;">
+        <a class="navbar-brand" href="{{ .Site.BaseURL }}/">{{ .Site.Title }}</a>
+        <svg id="logo" style="display: none"></svg>
+      </div>
+    </div>
+  </nav>
+  <div class="container content">

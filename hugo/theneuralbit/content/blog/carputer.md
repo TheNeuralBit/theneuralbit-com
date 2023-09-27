@@ -1,0 +1,123 @@
++++
+title = "Carputer"
+slug = "carputer"
+type = "post"
+categories = ["projects"]
+date = 2009-07-05
+draft = "False"
++++
+
+A few months after I got my new Volvo S70, I began to think that the stereo
+head unit would be perfect for a carputer (car computer). It's a rather large
+head unit, probably about twice as tall as a typical one, so there would be
+plenty of space inside for a computer and the other necessary electronics. The
+other great thing about it is that you can remove it just by popping two tabs
+and pulling it out, making debugging really easy.
+
+<!--more-->
+
+Original Head Unit (Before):
+
+![Before]({static}./images/carputer_before.jpg)
+
+Carputer (After):
+
+![After]({static}./images/carputer_after.jpg)
+
+## Parts
+
+### Computer
+
+First I had to decide what computer I was going to put into the thing. Building
+my own was out of the question - I could never make it small enough. There are
+a few commercialy available miniature PCs, but I decided on a Mac Mini. It fits
+nearly perfectly inside the gutted stereo, and it's been used for this sort of
+thing before, so help would be easier to find, if necessary.
+
+### Power Supply
+
+Unfortunately, my car doesn't have wall outlets, so I needed some sort of power
+supply to convert the 12V from the battery to a usable voltage for the mac. I
+found exactly what I needed in the
+[Carnetix CNX-P1900](http://carnetix.com/CNXP1900.htm). It's a power supply that
+is made specifically for this purpose. Besides just powering the computer and
+other peripherals, it will accept an ignition signal, and switch the computer on
+and off with the car rather than just cutting power to it.
+
+### Amplifiier
+
+An amplifier is necessary to drive the speakers based on the audio output of
+the Mac Mini. After a little bit of digging I found out about
+[41 Hz](http://www.41hz.com), a source for amplifier kits based on Tripath's
+T-Amplifiers. These amps are prefect for my purpose, they're cheap, small
+enough to fit inside the head unit, and they produce great sound. From the
+manual I determined that the original head unit had a 4x25W amplifier inside,
+so I ordered two of the amp6-basics, which are each 2x25W.
+
+### Case
+
+Rather than just gutting my old head unit, and going without music for a while,
+I decided to pick up an old volvo head unit from a junkyard. It ended up
+costing me a little but more but I couldn't count on getting this done quickly.
+
+## Construction
+
+### Plan
+
+### Implementation
+
+## Problems and Debugging
+
+### Ground Loop
+
+Before taking the time to assemble everything into the head unit, I wanted to
+make sure that the system worked properly. So I connected the battery and
+speakers to the device and tried starting up the computer, instead of the
+familiar mac boot up sound, all I heard was some serious noise.
+
+I spent a good portion of my summer trying to identify the source of this
+noise. I tried putting a [pi filter](http://en.wikipedia.org/wiki/Pi_filter) on
+the amplifier's power rail, a passive low pass filter on the audio signal from
+the mac, and several other filters, but none of them had any effect.
+
+After researching some typical causes of noise in audio systems I realized that
+I had created a
+[ground loop](http://en.wikipedia.org/wiki/Ground_loop_(electricity)) between
+the amplifier, mac mini, power supply and back to the mac mini. Im sure this
+would be obvious to anyone who had worked with audio and analog systems to any
+extent, but this was really my first foray into analog, so I never saw it
+coming.
+
+The solution is just to isolate one of the connections in the loop. Since
+that's not really an option for the power rails, I added a 1:1 transformer to
+the audio signal between the mac mini and the amplifier. This essentially opens
+up the loop since there is no longer a direct ground connection through the
+transformer.
+
+Once the ground loop was removed, the system worked perfectly. Here's a video
+of that first successful test:
+
+{{< vimeo id="7115934" width="600" height="450" >}}
+
+Since it was working just fine, I went ahead and assembled the whole device and
+tested it again:
+
+{{< vimeo id="7115961" width="600" height="450" >}}
+
+### Battery Draining
+
+Unfortunately, the problems didn't end there. After installing the device in my
+car permanently, I managed to completely drain my battery several times. This
+was happening because I had my power supply configured to sleep the computer
+rather than turn it off when the car wasn't running. When I left the car
+without starting it for a few days, the sleeping computer would drain the
+battery.
+
+I was under the impression that the Carnetix power supply would monitor the
+battery voltage and turn the computer off if it got too low. However after a
+little bit of research I found out that the standard firmware sets the low
+battery threshold far too low. I was able to follow
+[instructions](http://www.carnetix.com/firmware/UFlashInstructions.htm) on the
+Carnetix website to modify the
+[constant](http://www.carnetix.com/firmware/MemoryLocations.htm) controlling
+the threshold, and reflash the power supply.

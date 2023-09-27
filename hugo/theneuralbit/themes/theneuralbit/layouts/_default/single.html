@@ -1,0 +1,24 @@
+{{ partial "header.html" . }}
+    <a href="{{ .Site.BaseURL }}/">← Back</a>
+
+    <section class="container">
+        <section class="content">
+            <h1>{{ if .Params.heading }} {{ .Params.heading }} {{ else }} {{ .Title }} {{ end }}</h1>
+
+            <p class="meta">
+              {{ .Date.Format (.Site.Params.dateform | default "January 2006") }}
+              &ndash; &#128339; {{ .ReadingTime }} min read
+            </p>
+
+            <div class="sub-header">
+            </div>
+
+            <div class="entry-content">
+                {{ .Content }}
+            </div>
+
+        </section>
+        <br>
+    </section>
+
+{{ partial "footer.html" . }}

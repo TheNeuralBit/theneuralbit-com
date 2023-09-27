@@ -1,0 +1,12 @@
+name = "the neural bit"
+license = "TODO"
+licenselink = "TODO"
+description = "hugo template designed for theneuralbit.com"
+homepage = "TODO"
+tags = ["blog"]
+features = ["anagram", "animation"]
+min_version = 0.1
+
+[author]
+  name = "Brian Hulette"
+  homepage = "http://theneuralbit.com"

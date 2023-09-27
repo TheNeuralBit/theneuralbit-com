@@ -1,0 +1,95 @@
+@import url(https://fonts.googleapis.com/css?family=PT+Sans:700|PT+Serif);
+
+@import "bootstrap/bootstrap.less";
+
+@import "bootstrap/variables.less";
+@import "custom_variables.less";
+
+@import "bootstrap/mixins.less";
+
+@import "bootstrap/grid.less";
+@import "bootstrap/code.less";
+@import "bootstrap/type.less";
+
+@import "ipynb.less";
+
+h1.entry-title {
+  font-size: 36px;
+  a {
+    text-decoration: none;
+    color: black;
+    transition: color 0.3s;
+    &:hover {
+      color: @brand-primary;
+    }
+  }
+}
+
+nav {
+  background-color: white;
+  width: 100%;
+  .navbar-brand {
+    font-family: @font-family-sans-serif;
+    padding-left: 0px;
+    line-height: 1;
+  }
+}
+
+nav.affix-top {
+  height: @navbar-affix-top-height;
+  ul.nav {
+    margin-top: @navbar-affix-top-height - @navbar-affix-height;
+  }
+  .navbar-brand {
+    height: @navbar-affix-top-height;
+    padding-top: (@navbar-affix-top-height - @font-size-h1)/2;
+    font-size: @font-size-h1;
+    padding-left: 50px;
+    margin-left: -50px;
+    padding-right: 50px;
+  }
+}
+
+nav.affix {
+  position: fixed;
+  top: 0;
+  border-bottom: 1px solid @navbar-default-border;
+  background-color: @navbar-affix-bg;
+  .navbar-brand {
+    visibility: visible !important;
+  }
+  #logo {
+    display: none !important;
+  }
+}
+
+nav.affix + div.content {
+  padding-top: @navbar-affix-top-height;
+}
+
+p.meta {
+  color: @gray-light;
+  font-size: @font-size-small;
+}
+
+ol.simple-footnotes {
+  padding-top: 20px;
+  border-top: 1px solid @gray-lighter;
+  margin-top: 20px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  padding: 5px;
+  border: 1px solid @gray-light;
+}
+
+.navbar-nav{
+    a {
+        &:hover {
+            border-bottom: 2px solid @brand-primary;
+        }
+    }
+}
