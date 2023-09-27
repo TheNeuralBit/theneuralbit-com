@@ -12,7 +12,7 @@ FTP_HOST=localhost
 FTP_USER=anonymous
 FTP_TARGET_DIR=/
 
-SSH_HOST=ssh.phx.nearlyfreespeech.net
+SSH_HOST=ssh.nyc1.nearlyfreespeech.net
 SSH_PORT=22
 SSH_USER=hulettbh_theneuralbit
 SSH_TARGET_DIR=.
