@@ -36,7 +36,6 @@ SOUNDCLOUD_CLIENT_ID = 'ebb0751100a870643e78012bc3394fe5'
 
 # THEME CONFIGURATION
 THEME = ".themes/theneuralbit"
-HEADER_IMAGE = "/images/neuron_header.png"
 MENUITEMS = (('blog', '/'),)
 DISPLAY_PAGES_ON_MENU = True
 DISPLAY_CATEGORIES_ON_MENU = False
