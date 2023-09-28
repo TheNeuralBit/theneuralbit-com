@@ -4,7 +4,7 @@ cache
 *.pid
 .*.swp
 .*.swo
-.themes/theneuralbit/static/style.css
-.themes/theneuralbit/static/js/anagranimate.min.js
-.themes/theneuralbit/static/js/scrollspy.min.js
+theme/static/style.css
+theme/static/js/anagranimate.min.js
+theme/static/js/scrollspy.min.js
 .python-version
