@@ -1,3 +1,4 @@
+/* global d3 document */
 "use strict";
 var trigger_buf = 50;
 var header = d3.select('.navbar-brand');
@@ -28,10 +29,7 @@ tester.remove();
 
 // Turn strings into lists of objects with some additional information
 function strParse(str) {
-    var x = d3.scale.ordinal()
-        .domain(d3.range(str.length))
-        .rangePoints([20, w - 20], 1),
-        rtrn = [],
+    var rtrn = [],
         char_count = {},
         curr_x = padding_left,
         bbox, this_object, is_space, i;
@@ -99,10 +97,10 @@ var text = svg.selectAll('text')
     .append('text')
     .attr('text-anchor', 'middle')
     .attr('alignment-baseline', 'middle')
-    .attr('x', function (d, ignore) {
+    .attr('x', function (d) {
         return d.x;
     })
-    .attr('y', function (d, ignore) {
+    .attr('y', function (d) {
         return d.y;
     })
     .attr('fill', header.style('color'))
@@ -129,25 +127,6 @@ var trigger_rect = svg.append('rect')
     .attr('y', Math.max(0, min_y))
     .attr('height', max_y - min_y)
     .attr('fill-opacity', '0');
-
-function updateBBox() {
-    var tester = svg.append('text'),
-        curr_x = 0,
-        bbox,
-        is_space,
-        i;
-    for (i = 0; i < curr_str.length; i += 1) {
-        is_space = curr_str[i].c === " ";
-        bbox = tester.text(is_space ? "l" : curr_str[i].c).node().getBBox();
-        curr_x += bbox.width / 2;
-
-        curr_str[i].cx = curr_x;
-        curr_str[i].radius = bbox.width / 2 - 2;
-
-        curr_x += bbox.width / 2;
-    }
-    tester.remove();
-}
 
 function gravity(alpha) {
     return function (d) {
@@ -224,15 +203,6 @@ force.on("tick", function (e) {
             }
             return y;
         });
-    //circles
-    //  .attr('cx', function (d) {
-    //    var x = Math.max(0, Math.min(cw - d.w, d.x));
-    //    return x;
-    //  })
-    //  .attr('cy', function (d) {
-    //    var y = Math.max(d.h, Math.min(ch, d.y));
-    //    return y;
-    //  });
 });
 
 // Handle mouse/touch events
@@ -302,17 +272,5 @@ svg.on('touchcancel', endmouse);
 svg.on('mousemove', movemouse);
 svg.on('touchmove', movemouse);
 
-// Start up the force layout once everything is defined
+// Start up the force layout
 force.start();
-
-function enable_anagranimate() {
-    svg.style('display', 'block');
-    header.style('visibility', 'hidden');
-    force.start();
-}
-
-function disable_anagranimate() {
-    svg.style('display', 'none');
-    header.style('visibility', 'visible');
-    force.stop();
-}
